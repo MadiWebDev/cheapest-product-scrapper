@@ -44,6 +44,11 @@ app.add_middleware(
 app.include_router(auth.router)
 app.include_router(upload.router)
 app.include_router(search.router)
+try:
+    from app.routers import finder, admin as admin_router
+    app.include_router(finder.router); app.include_router(admin_router.router)
+except Exception:  # finder routers are additive; legacy app must still boot
+    pass
 
 
 @app.get("/", response_model=SuccessResponse)
@@ -74,3 +79,10 @@ if __name__ == "__main__":
         port=8000,
         reload=True
     )
+
+@app.get("/ready")
+def ready(): return {"status":"ready"}
+@app.get("/metrics")
+def metrics():
+    from fastapi.responses import PlainTextResponse
+    return PlainTextResponse("cpf_up 1\n")
