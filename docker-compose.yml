@@ -1,0 +1,26 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment: {POSTGRES_USER: "${POSTGRES_USER:-postgres}", POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}", POSTGRES_DB: "${POSTGRES_DB:-cpf}"}
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck: {test: ["CMD-SHELL","pg_isready -U postgres"], interval: 10s, timeout: 5s, retries: 5}
+  redis:
+    image: redis:7-alpine
+    healthcheck: {test: ["CMD","redis-cli","ping"], interval: 10s, timeout: 5s, retries: 5}
+  api:
+    build: ./backend
+    env_file: [./backend/.env]
+    ports: ["8000:8000"]
+    depends_on: {db: {condition: service_healthy}, redis: {condition: service_healthy}}
+    healthcheck: {test: ["CMD","python","-c","import urllib.request;urllib.request.urlopen('http://localhost:8000/ready')"], interval: 15s, timeout: 5s, retries: 5}
+  worker:
+    build: ./backend
+    env_file: [./backend/.env]
+    command: celery -A app.workers.celery_app worker --loglevel=info
+    depends_on: {db: {condition: service_healthy}, redis: {condition: service_healthy}}
+  web:
+    build: ./web-application
+    environment: {NEXT_PUBLIC_API_URL: "http://localhost:8000"}
+    ports: ["3000:3000"]
+    depends_on: [api]
+volumes: {pgdata: {}}
