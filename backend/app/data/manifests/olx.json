@@ -1,0 +1,26 @@
+{
+  "access_method": "public_structured_data",
+  "cache_ttl_seconds": {
+    "product": 3600,
+    "search": 900
+  },
+  "compliance_id": null,
+  "compliance_note": "OLX classifieds; used goods; structured data.",
+  "compliance_status": "unreviewed",
+  "countries": [],
+  "currencies": [
+    "USD"
+  ],
+  "data_use": {
+    "attribution": "Source name shown with every offer; outbound via /go",
+    "may_display_price": true,
+    "may_store_offers": true
+  },
+  "id": "olx",
+  "rate_limit": {
+    "concurrency": 2,
+    "requests_per_minute": 30,
+    "timeout_seconds": 12.0
+  },
+  "search_template": "https://www.olx.com.pk/items/q-{q}"
+}

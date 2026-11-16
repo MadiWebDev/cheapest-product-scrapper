@@ -8,6 +8,7 @@ def assert_public_url(url: str) -> None:
     """SSRF guard: https/http only, host must resolve to a public IP."""
     u=urllib.parse.urlparse(url)
     if u.scheme not in ("http","https") or not u.hostname: raise ValueError("invalid url")
+    if u.username or u.password: raise ValueError("credentials in URL blocked")
     infos=socket.getaddrinfo(u.hostname, None)
     for info in infos:
         ip=ipaddress.ip_address(info[4][0])

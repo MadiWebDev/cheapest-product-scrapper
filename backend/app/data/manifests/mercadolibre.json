@@ -1,0 +1,26 @@
+{
+  "access_method": "public_structured_data",
+  "cache_ttl_seconds": {
+    "product": 3600,
+    "search": 900
+  },
+  "compliance_id": null,
+  "compliance_note": "Mercado Libre LATAM; has public API (no key) \u2014 structured fallback here.",
+  "compliance_status": "unreviewed",
+  "countries": [],
+  "currencies": [
+    "USD"
+  ],
+  "data_use": {
+    "attribution": "Source name shown with every offer; outbound via /go",
+    "may_display_price": true,
+    "may_store_offers": true
+  },
+  "id": "mercadolibre",
+  "rate_limit": {
+    "concurrency": 2,
+    "requests_per_minute": 30,
+    "timeout_seconds": 12.0
+  },
+  "search_template": "https://listado.mercadolibre.com.mx/{q}"
+}

@@ -8,11 +8,17 @@ from app.domain.normalize import normalize_availability
 from app.services.fx import get_fx
 from app.priceintel.compliance import is_live_enabled
 from app.priceintel.go import STORE as GO_STORE, offer_id_for
+from app.priceintel.health import HEALTH
 SORTS={"best_value","lowest_landed","lowest_item","best_quality","fastest","biggest_discount"}
 def run_connector(name, query, filters, country):
     conn=REGISTRY[name]; t=time.time()
-    try: offers=conn.search(query, filters, country); return name, offers, round((time.time()-t)*1000), conn.drift_check(offers), None
-    except Exception as e: return name, [], round((time.time()-t)*1000), False, str(e)[:200]
+    try:
+        offers=conn.search(query, filters, country); drift=conn.drift_check(offers); ms=round((time.time()-t)*1000)
+        HEALTH.record(name, len(offers), drift, None, ms)
+        return name, offers, ms, drift, None
+    except Exception as e:
+        ms=round((time.time()-t)*1000); HEALTH.record(name, 0, False, str(e)[:200], ms)
+        return name, [], ms, False, str(e)[:200]
 def apply_filters(offers, f: dict):
     out=[]
     for o in offers:

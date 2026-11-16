@@ -1,0 +1,25 @@
+{
+  "access_method": "user_supplied_url",
+  "cache_ttl_seconds": {
+    "product": 3600,
+    "search": 900
+  },
+  "compliance_id": null,
+  "compliance_note": "User-supplied URL only; JSON-LD/OpenGraph extraction; SSRF-guarded; robots respected by caller's fetch policy.",
+  "compliance_status": "unreviewed",
+  "countries": [],
+  "currencies": [
+    "USD"
+  ],
+  "data_use": {
+    "attribution": "Source name shown with every offer; outbound via /go",
+    "may_display_price": true,
+    "may_store_offers": true
+  },
+  "id": "generic",
+  "rate_limit": {
+    "concurrency": 2,
+    "requests_per_minute": 30,
+    "timeout_seconds": 12.0
+  }
+}

@@ -67,3 +67,25 @@ def location_resolve(request: Request, country: str | None = None, remembered: s
 @router.get("/api/format/money")
 def money(amount: float, currency: str = "PKR"):
     return {"amount": amount, "currency": currency.upper(), "formatted": format_money(amount, currency)}
+
+
+@router.get("/api/adapters")
+def adapters():
+    from app.priceintel.health import HEALTH
+    from app.priceintel.manifests import MANIFESTS
+    from app.priceintel.compliance import is_live_enabled
+    return {"adapters": [{"id": m["id"], "access_method": m["access_method"],
+                          "compliance_status": m["compliance_status"],
+                          "live_enabled": is_live_enabled(m["id"]),
+                          "health": HEALTH.for_connector(m["id"])}
+                         for m in MANIFESTS.values()]}
+
+
+@router.get("/api/adapters/{adapter_id}")
+def adapter_one(adapter_id: str):
+    from app.priceintel.health import HEALTH
+    from app.priceintel.manifests import manifest_for
+    m = manifest_for(adapter_id)
+    if not m:
+        raise HTTPException(status_code=404, detail="unknown adapter")
+    return {**m, "health": HEALTH.for_connector(adapter_id)}

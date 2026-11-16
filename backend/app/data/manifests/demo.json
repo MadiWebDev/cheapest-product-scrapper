@@ -1,0 +1,25 @@
+{
+  "access_method": "fixture",
+  "cache_ttl_seconds": {
+    "product": 3600,
+    "search": 900
+  },
+  "compliance_id": null,
+  "compliance_note": "DEMO ONLY \u2014 active only when DEMO_MODE=true; every offer flagged demo=true.",
+  "compliance_status": "unreviewed",
+  "countries": [],
+  "currencies": [
+    "USD"
+  ],
+  "data_use": {
+    "attribution": "Source name shown with every offer; outbound via /go",
+    "may_display_price": true,
+    "may_store_offers": true
+  },
+  "id": "demo",
+  "rate_limit": {
+    "concurrency": 2,
+    "requests_per_minute": 30,
+    "timeout_seconds": 12.0
+  }
+}

@@ -5,7 +5,14 @@ from app.domain.landed import VAT, DUTY
 router=APIRouter(prefix="/api/admin", tags=["admin"])
 _state={n:{"enabled":True,"successes":0,"failures":0,"blocks":0} for n in REGISTRY}
 @router.get("/connectors")
-def health(): return {"connectors":[{"name":n, **_state[n], "health":REGISTRY[n].health_check()} for n in REGISTRY]}
+def health():
+    from app.priceintel.health import HEALTH
+    from app.priceintel.manifests import MANIFESTS
+    from app.priceintel.compliance import is_live_enabled
+    return {"connectors":[{"name":n, **_state[n], "health":REGISTRY[n].health_check(),
+                            "runtime":HEALTH.for_connector(n),
+                            "compliance_status":(MANIFESTS.get(n) or {}).get("compliance_status","unreviewed"),
+                            "live_enabled":is_live_enabled(n)} for n in REGISTRY]}
 @router.post("/connectors/{name}/toggle")
 def toggle(name: str, enabled: bool=True):
     if name in _state: _state[name]["enabled"]=enabled

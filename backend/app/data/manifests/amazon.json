@@ -1,0 +1,41 @@
+{
+  "access_method": "official_api_preferred_structured_fallback",
+  "cache_ttl_seconds": {
+    "product": 3600,
+    "search": 900
+  },
+  "compliance_id": null,
+  "compliance_note": "Prefer PA-API (AMAZON_PAAPI_KEY + AMAZON_PARTNER_TAG env) in production; structured-data fallback; respect Amazon terms/robots.",
+  "compliance_status": "unreviewed",
+  "countries": [],
+  "currencies": [
+    "USD",
+    "GBP",
+    "EUR",
+    "INR",
+    "AED",
+    "SAR",
+    "JPY",
+    "AUD",
+    "CAD",
+    "BRL",
+    "MXN",
+    "SGD",
+    "TRY",
+    "EGP",
+    "PLN",
+    "SEK"
+  ],
+  "data_use": {
+    "attribution": "Source name shown with every offer; outbound via /go",
+    "may_display_price": true,
+    "may_store_offers": true
+  },
+  "id": "amazon",
+  "rate_limit": {
+    "concurrency": 2,
+    "requests_per_minute": 30,
+    "timeout_seconds": 12.0
+  },
+  "search_template": "https://www.amazon.com/s?k={q}"
+}
