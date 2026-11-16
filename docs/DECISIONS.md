@@ -275,3 +275,40 @@ Initial 14.2.5 install printed a known-vulnerability warning; bumped to 14.2.35 
 
 ## D-024 — Phases 3–6 landed in one commit; 8–10 in one commit
 Core domain slices (matching, landed, scoring, search) are interdependent single modules; they were built and tested together and committed as 3b1164e (tags phase-3/4/5/6 point at it) and services/admin as one commit (phase-8/9/10 tags). Recorded honestly rather than fabricating separate per-phase diffs.
+
+## D-025 — PRICEINTEL v3: keep the v1 stack; map the directive's TypeScript recommendations to equivalents
+- **Date:** 2026-11-17 (v3 Phase 0). **Status:** accepted.
+- **Context:** Directive v3 §3 recommends pnpm workspaces/Turborepo, Fastify, BullMQ, Drizzle/Prisma, Zod — but §3 also says "override with an ADR if the audit says otherwise" and §2 says "Preserve existing functionality and stack wherever practical." The v1 product is Python/FastAPI + Celery/Redis + PostgreSQL/pgvector (D-001/D-002), working and tested (17 pytest green, frontend build green, API smoke green — re-evidenced 2026-11-17).
+- **Decision:** No rewrite. Mapping: monorepo "packages/core" → `backend/app/domain/` + `backend/app/services/` (shared by API and workers); "packages/contracts" → Pydantic models + FastAPI OpenAPI; Fastify → FastAPI; BullMQ → Celery (D-002); Drizzle/Prisma → SQLAlchemy + Alembic; Zod validation → Pydantic validation; apps/web → `web-application/` (Next.js, unchanged); apps/mobile + apps/extension → `mobile/` + `extension/` scaffolds (Phase 12).
+- **Consequences:** All v3 features land on the proven stack; the directive's gates are implemented as repo-root scripts (D-028). Rollback: none needed (no migration).
+
+## D-026 — One-command verification as shell scripts, not pnpm
+- **Date:** 2026-11-17 (v3 Phase 0). **Status:** accepted.
+- **Decision:** `./verify.sh` (pytest + audit:truth + frontend build), `./eval.sh` (eval datasets + thresholds), `./e2e.sh` (boot smoke + TestClient journeys), `./audit-truth.sh` (ledger evidence, stub/fake marker scan, demo-production guard). These are the §1.13 commands in this stack; CI runs the same scripts.
+
+## D-027 — Demo-mode production guard uses APP_ENV
+- **Date:** 2026-11-17 (v3 Phase 0). **Status:** accepted.
+- **Decision:** §1.14's `NODE_ENV=production` maps to `APP_ENV=production` (fallback `ENVIRONMENT`). `backend/app/main.py` raises at import when `DEMO_MODE=true` under production. Verified by tools/audit_truth.py check 3 and a unit test.
+
+## D-028 — Baseline bug fixes before v3 features (fix-before-build, extends D-006)
+- **Date:** 2026-11-17 (v3 Phase 0). **Status:** accepted.
+- **Context:** Re-running the v1 app end-to-end (not just its unit tests) exposed defects the v1 paper docs claimed fixed: B-01 `VECTOR` imported from `sqlalchemy.dialects.postgresql` in `app/models/supplier.py` (ImportError on boot); B-05 rate-limited handlers in `app/main.py` missing the `request: Request` parameter slowapi requires (boot failure); `email-validator` missing from requirements.txt; `upstash-redis==0.3.0` pin does not exist on PyPI (dead pin); `openai==1.10.0` requires `httpx<0.28`.
+- **Decision:** Fixed in Phase 0: pgvector import, Request parameters, requirements.txt (dropped upstash-redis, added email-validator==2.1.0, pinned httpx==0.27.2). The v3 test venv (`~/workspace/cpf-venv`) was completed with the requirements.txt dependency set so the full app boots under TestClient.
+
+## D-029 — Docker unavailable in the build VM; Compose boot gate BLOCKED with fallback
+- **Date:** 2026-11-17 (v3 Phase 0). **Status:** accepted.
+- **Context:** `docker: command not found` in this VM, so §1.6's "app starts via Docker Compose" gate cannot be executed here.
+- **Decision:** Recorded in BLOCKERS.md (B3-001). Fallback verification: the app boots and serves via direct process/TestClient runs (evidence in TRUTH_LEDGER). docker-compose.yml is kept correct by inspection and CI (GitHub Actions has Docker). Never claim the Compose boot is VERIFIED from this environment.
+
+## D-030 — Billing provider is Paddle (merchant of record)
+- **Date:** 2026-11-17 (v3 Phase 0, applied in Phase 9). **Status:** accepted.
+- **Context:** Directive §29B requires a BillingProvider abstraction over a merchant of record and an ADR on founder-country availability. The user's settled choice across their other products is Paddle-only. Stripe does not onboard Pakistan-based businesses directly; Paddle does.
+- **Decision:** BillingProvider abstraction with a Paddle implementation (sandbox/test-mode in this program — no live keys exist). Alternatives documented: Lemon Squeezy, Polar, local gateways — not implemented.
+
+## D-031 — Product taxonomy: Google Product Taxonomy
+- **Date:** 2026-11-17 (v3 Phase 0, applied in Phase 4). **Status:** accepted.
+- **Decision:** §9's taxonomy choice is Google Product Taxonomy (free, public, maps cleanly to the connector categories already in use). GS1 GPC requires a paid licence — rejected on cost (§1.8).
+
+## D-032 — Compliance records are versioned data + a code gate, reviewed from public pages only
+- **Date:** 2026-11-17 (v3 Phase 0, applied in Phase 1). **Status:** accepted.
+- **Decision:** COMPLIANCE_REVIEW records (Appendix C fields) live as versioned JSON under `backend/app/data/compliance/` plus an admin-editable service layer. A record is "approved" only when its fields were actually reviewed from the source's public terms/robots pages in this program; anything not fetched is `pending` and the adapter stays disabled for live mode. No terms summaries are invented (§1.12).

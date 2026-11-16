@@ -1,5 +1,13 @@
 """FastAPI application entry point."""
-from fastapi import FastAPI
+import os
+
+# PriceIntel directive §1.14: demo data must never reach a production build.
+if os.getenv("DEMO_MODE", "false").lower() == "true" and os.getenv(
+    "APP_ENV", os.getenv("ENVIRONMENT", "development")
+).lower() == "production":
+    raise RuntimeError("DEMO_MODE=true is forbidden when APP_ENV=production")
+
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from slowapi import Limiter, _rate_limit_exceeded_handler
@@ -53,7 +61,7 @@ except Exception:  # finder routers are additive; legacy app must still boot
 
 @app.get("/", response_model=SuccessResponse)
 @limiter.limit("100/minute")
-def root():
+def root(request: Request):
     """Root endpoint."""
     return SuccessResponse(
         data={"message": "SourceLens API", "version": "1.0.0"},
@@ -63,7 +71,7 @@ def root():
 
 @app.get("/api/health", response_model=SuccessResponse)
 @limiter.limit("100/minute")
-def health_check():
+def health_check(request: Request):
     """Health check endpoint."""
     return SuccessResponse(
         data={"status": "healthy"},
