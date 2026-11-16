@@ -43,6 +43,31 @@ def is_live_enabled(source_id: str, today: datetime.date | None = None) -> bool:
     return True
 
 
+STATUSES = ("pending", "approved", "blocked", "rejected", "expired")
+
+
+def update_record(source_id: str, *, status: str, reviewer: str,
+                  expiry_date: str | None = None, reason: str = "") -> dict:
+    """Admin review write-path: updates the versioned record on disk.
+    Approving requires a reviewer and an expiry date — the gate must
+    never open by accident."""
+    if status not in STATUSES:
+        raise ValueError(f"status must be one of {STATUSES}")
+    if source_id not in RECORDS:
+        raise KeyError(source_id)
+    if status == "approved" and (not reviewer or not expiry_date):
+        raise ValueError("approval requires a reviewer and an expiry_date")
+    rec = dict(RECORDS[source_id])
+    rec.update({"status": status, "reviewer": reviewer,
+                "sign_off_date": datetime.date.today().isoformat() if status == "approved" else rec.get("sign_off_date"),
+                "expiry_date": expiry_date or rec.get("expiry_date")})
+    if reason:
+        rec["status_reason"] = reason
+    (DATA / f"{source_id}.json").write_text(json.dumps(rec, indent=2))
+    RECORDS[source_id] = rec
+    return rec
+
+
 def gate_report(today: datetime.date | None = None) -> list[dict]:
     return [
         {

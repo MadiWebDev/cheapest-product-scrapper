@@ -1,16 +1,15 @@
 # STATE — PRICEINTEL v3 resume file (directive §1.4)
 
-**Current phase:** 1 — Walking skeleton (complete); Phase 2 next.
-**Last completed task:** Phase 1 — compliance gate + records (Daraz
-blocked by its terms §2E; PriceOye/Telemart pending), certainty labels +
-trust reasons in search output, /go tracked redirect, journey tests.
-Suite: 31 passed.
+**Current phase:** 2 — Location intelligence (complete); Phase 3 next.
+**Last completed task:** Phase 2 — location resolution (manual wins),
+country config (16 countries, PK PTA/COD/cities), lakh/crore formatting
+backend+frontend, admin compliance review endpoint. Suite: 38 passed.
+Pushes confirmed: phase-0 3ef8628d, phase-1 6538b242.
 **Next three tasks:**
-1. Phase 2: location intelligence (priority order, manual wins),
-   country config data incl. PK (PTA note, COD, holidays), PKR
-   lakh/crore formatting backend + frontend.
-2. Phase 2: registry/admin extension for compliance records.
-3. Phase 2 commit + push.
+1. Phase 3: manifest.json per adapter + registry surfacing.
+2. Phase 3: contract tests vs fixtures for top adapters; drift output
+   wired to adapter health + admin.
+3. Phase 3 commit + push.
 
 **Open blockers:** B3-001 Docker absent in VM; B3-002 `.github/workflows/*`
 push 403; B3-003 no live marketplace keys; B3-004 no LLM key; B3-005 no

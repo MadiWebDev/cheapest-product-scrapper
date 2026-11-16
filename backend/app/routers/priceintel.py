@@ -1,11 +1,12 @@
 """PriceIntel v3 routes: /go tracked redirect + compliance gate API."""
 from __future__ import annotations
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import RedirectResponse
 
 from app.priceintel.compliance import gate_report, get_record
 from app.priceintel.go import STORE, apply_affiliate, destination_allowed
+from app.priceintel.location import COUNTRIES, country_config, format_money, resolve_country
 
 router = APIRouter(tags=["priceintel"])
 
@@ -39,3 +40,30 @@ def compliance_one(source_id: str):
 @router.get("/api/clicks/summary")
 def clicks_summary():
     return STORE.click_summary()
+
+
+@router.get("/api/countries")
+def countries():
+    return {"version": "2026-11-17",
+            "countries": {code: {"name": c["name"], "currency": c["currency"],
+                                 "cod_available": bool(c.get("payment_norms", {}).get("cod_common"))}
+                          for code, c in sorted(COUNTRIES.items())}}
+
+
+@router.get("/api/countries/{code}")
+def country_one(code: str):
+    cfg = country_config(code)
+    if not cfg:
+        raise HTTPException(status_code=404, detail="unknown country code")
+    return {"code": code.upper(), **cfg}
+
+
+@router.get("/api/location/resolve")
+def location_resolve(request: Request, country: str | None = None, remembered: str | None = None):
+    return resolve_country(explicit=country, remembered=remembered,
+                           accept_language=request.headers.get("accept-language"))
+
+
+@router.get("/api/format/money")
+def money(amount: float, currency: str = "PKR"):
+    return {"amount": amount, "currency": currency.upper(), "formatted": format_money(amount, currency)}

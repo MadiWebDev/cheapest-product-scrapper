@@ -72,7 +72,9 @@ def search(query: str, filters: dict|None=None, country: str="US", currency: str
     sort=(filters.get("sort") or "best_value")
     keyf={"lowest_landed":lambda p: min([o["landed"]["total"] for o in p["offers"] if o["landed"]] or [1e18]),"best_quality":lambda p: -max(o["quality_score"] for o in p["offers"]),"lowest_item":lambda p: min([o["offer"]["price"] or 1e18 for o in p["offers"]])}
     if sort in keyf: products.sort(key=keyf[sort])
+    from app.priceintel.location import location_block
     return {"query":query,"country":country,"currency":currency,"fx_stale":fx_stale,"demo":("demo" in REGISTRY),"products":products,"unavailable":unavailable,"connector_health":health,"total_offers":sum(len(p["offers"]) for p in products),
+            "location":location_block(country, category),
             "affiliate_disclosure":"Outbound /go links may earn the platform a commission when an affiliate tag is configured; commissions never affect ranking."}
 def fake_discount(was: float|None, now: float|None, median_90d: float|None) -> dict:
     if not was or not now or not median_90d: return {"fake":False,"reason":"insufficient history"}

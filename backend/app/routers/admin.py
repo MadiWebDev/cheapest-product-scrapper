@@ -1,5 +1,5 @@
 from __future__ import annotations
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 from app.connectors.registry import REGISTRY
 from app.domain.landed import VAT, DUTY
 router=APIRouter(prefix="/api/admin", tags=["admin"])
@@ -16,3 +16,15 @@ def tax_tables(): return {"vat_gst":VAT,"duty":DUTY,"label":"estimate"}
 def metrics():
     lines=["# HELP cpf_connectors_total Connectors registered","# TYPE cpf_connectors_total gauge", f"cpf_connectors_total {len(REGISTRY)}"]
     return "\n".join(lines)
+
+# --- v3: compliance review administration (directive §6/§35) ---
+from app.priceintel.compliance import RECORDS as COMPLIANCE_RECORDS, gate_report as _gate_report, update_record as _update_record
+@router.get("/admin/compliance")
+def admin_compliance(): return {"gate": _gate_report(), "records": COMPLIANCE_RECORDS}
+@router.post("/admin/compliance/{source_id}")
+def admin_compliance_update(source_id: str, body: dict):
+    try:
+        rec=_update_record(source_id, status=body.get("status",""), reviewer=body.get("reviewer",""), expiry_date=body.get("expiry_date"), reason=body.get("reason",""))
+    except KeyError: raise HTTPException(404, "unknown source")
+    except ValueError as e: raise HTTPException(400, str(e))
+    return {"updated": source_id, "status": rec["status"], "live_enabled": rec["status"]=="approved"}
