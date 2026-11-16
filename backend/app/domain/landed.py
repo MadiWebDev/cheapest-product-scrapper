@@ -30,3 +30,27 @@ def landed_price(offer: RawOffer, ship_to: str, user_ccy: str, fx: dict[str,floa
     return LandedBreakdown(item=c(item_usd), shipping=c(ship_usd), duty=c(duty), tax=c(tax), handling=c(handling), fx_margin=round(fx_margin,2), total=round(total_user,2), currency=user_ccy, provenance=prov)
 def can_ship(offer: RawOffer, ship_to: str) -> bool:
     return (not offer.ships_to) or ship_to in offer.ships_to
+
+# --- v3 (directive §10): certainty vocabulary --------------------------------
+# v1 provenance used exact|estimated; v3 maps every cost line to
+# CONFIRMED / SELLER_ESTIMATE / PLATFORM_ESTIMATE (with rule id+version) /
+# UNKNOWN, and ranks on the conservative (computed) total.
+def certainty_for(offer: RawOffer, breakdown: LandedBreakdown | None) -> dict:
+    if breakdown is None:
+        return {"labels": {"item": "UNKNOWN", "shipping": "UNKNOWN", "duty": "UNKNOWN",
+                           "tax": "UNKNOWN", "handling": "UNKNOWN", "fx": "UNKNOWN"},
+                "rules": {}, "conservative_total": None,
+                "note": "Landed cost could not be computed for this offer."}
+    labels = {
+        "item": "CONFIRMED",  # the price as listed by the seller/marketplace
+        "shipping": "CONFIRMED" if offer.shipping_price is not None else "UNKNOWN",
+        "duty": "PLATFORM_ESTIMATE",
+        "tax": "PLATFORM_ESTIMATE",
+        "handling": "PLATFORM_ESTIMATE",
+        "fx": "PLATFORM_ESTIMATE",
+    }
+    rules = {"duty": f"duty.json@{DUTY.get('version', 'unversioned')}",
+             "tax": f"vat_gst.json@{VAT.get('version', 'unversioned')}",
+             "fx": "fx-service (frankfurter -> open.er-api -> stale-flagged cache)"}
+    return {"labels": labels, "rules": rules, "conservative_total": breakdown.total,
+            "note": "Tax and duty are estimates from versioned rule tables, never a guarantee."}

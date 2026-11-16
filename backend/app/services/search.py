@@ -1,11 +1,13 @@
 from __future__ import annotations
-import concurrent.futures, time
+import concurrent.futures, datetime, os, time
 from app.connectors.registry import REGISTRY
 from app.domain.matching import group_offers
-from app.domain.landed import landed_price, can_ship
-from app.domain.scoring import quality_score, value_score, median_price
+from app.domain.landed import landed_price, can_ship, certainty_for
+from app.domain.scoring import quality_score, value_score, median_price, top_reasons
 from app.domain.normalize import normalize_availability
 from app.services.fx import get_fx
+from app.priceintel.compliance import is_live_enabled
+from app.priceintel.go import STORE as GO_STORE, offer_id_for
 SORTS={"best_value","lowest_landed","lowest_item","best_quality","fastest","biggest_discount"}
 def run_connector(name, query, filters, country):
     conn=REGISTRY[name]; t=time.time()
@@ -29,7 +31,19 @@ def apply_filters(offers, f: dict):
     return out
 def search(query: str, filters: dict|None=None, country: str="US", currency: str="USD", connectors: list[str]|None=None, weights: dict|None=None, category: str="default") -> dict:
     filters=filters or {}; names=connectors or [n for n in REGISTRY if n!="generic"]
+    # Compliance gate (directive §6): in live mode (DEMO_MODE off) a source
+    # without an approved, unexpired compliance record is disabled.
+    demo_mode = os.getenv("DEMO_MODE", "false").lower() == "true"
+    if not demo_mode:
+        gated, kept = [], []
+        for n in names:
+            if n == "generic" or is_live_enabled(n): kept.append(n)
+            else: gated.append(n)
+        names = kept
+    else:
+        gated = []
     fx, fx_stale=get_fx(); all_offers=[]; health=[]
+    for n in gated: health.append({"connector": n, "offers": 0, "latency_ms": 0, "drift_suspected": False, "error": "disabled: no approved compliance record (live mode)", "compliance_blocked": True})
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as ex:
         for name, offers, ms, drift, err in ex.map(lambda n: run_connector(n, query, filters, country), names):
             all_offers.extend(offers); health.append({"connector":name,"offers":len(offers),"latency_ms":ms,"drift_suspected":drift,"error":err})
@@ -41,7 +55,10 @@ def search(query: str, filters: dict|None=None, country: str="US", currency: str
             if not can_ship(o, country): unavailable.append(o.to_dict()); continue
             landed=landed_price(o, country, currency, fx, category)
             q, expl=quality_score(o, median)
-            scored.append({"offer":o.to_dict(),"landed":landed.to_dict() if landed else None,"quality_score":q,"quality_explanation":expl,"availability":normalize_availability(o.availability,o.stock_qty).value,"value_score":0.0})
+            oid=offer_id_for(o.connector, o.url); GO_STORE.register(oid, o, g["title"])
+            scored.append({"offer":o.to_dict(),"landed":landed.to_dict() if landed else None,"quality_score":q,"quality_explanation":expl,"availability":normalize_availability(o.availability,o.stock_qty).value,"value_score":0.0,
+                           "offer_id":oid,"go_url":f"/go/{oid}","trust_score":q,"trust_reasons":top_reasons(expl, o),
+                           "certainty":certainty_for(o, landed),"checked_at":datetime.datetime.now(datetime.timezone.utc).isoformat()})
         if not scored: continue
         best=min([s["landed"]["total"] for s in scored if s["landed"]] or [0])
         for s in scored:
@@ -55,7 +72,8 @@ def search(query: str, filters: dict|None=None, country: str="US", currency: str
     sort=(filters.get("sort") or "best_value")
     keyf={"lowest_landed":lambda p: min([o["landed"]["total"] for o in p["offers"] if o["landed"]] or [1e18]),"best_quality":lambda p: -max(o["quality_score"] for o in p["offers"]),"lowest_item":lambda p: min([o["offer"]["price"] or 1e18 for o in p["offers"]])}
     if sort in keyf: products.sort(key=keyf[sort])
-    return {"query":query,"country":country,"currency":currency,"fx_stale":fx_stale,"demo":("demo" in REGISTRY),"products":products,"unavailable":unavailable,"connector_health":health,"total_offers":sum(len(p["offers"]) for p in products)}
+    return {"query":query,"country":country,"currency":currency,"fx_stale":fx_stale,"demo":("demo" in REGISTRY),"products":products,"unavailable":unavailable,"connector_health":health,"total_offers":sum(len(p["offers"]) for p in products),
+            "affiliate_disclosure":"Outbound /go links may earn the platform a commission when an affiliate tag is configured; commissions never affect ranking."}
 def fake_discount(was: float|None, now: float|None, median_90d: float|None) -> dict:
     if not was or not now or not median_90d: return {"fake":False,"reason":"insufficient history"}
     claimed=(was-now)/was; real=(median_90d-now)/median_90d

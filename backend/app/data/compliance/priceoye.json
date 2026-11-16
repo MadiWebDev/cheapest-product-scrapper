@@ -1,0 +1,23 @@
+{
+  "source_id": "priceoye",
+  "source_name": "PriceOye (Pakistan)",
+  "countries": ["PK"],
+  "access_method": "public_structured_data (proposed; not approved)",
+  "terms_url": null,
+  "terms_review_date": null,
+  "terms_summary": "NOT REVIEWED — terms page not yet fetched/read in this program. Source to check: the Terms of Use linked from priceoye.pk footer. Until reviewed, no conclusion is drawn and the gate stays closed.",
+  "robots_url": "https://priceoye.pk/robots.txt",
+  "robots_fetch_date": "2026-11-17",
+  "robots_rules": "Reviewed 2026-11-17. A long named-bot blocklist (Disallow: /) applies to listed crawlers only. User-agent: * — Disallow: *? and *& (query-string URLs), /account/, /orders, /administrateur/; Allow: / , *?page=, *?source=ppc. Sitemap published at /sitemap/sitemap-index.xml.",
+  "rate_limit_policy": "Not stated in robots.txt; conservative default if ever approved: <=10 requests/minute, identified user-agent.",
+  "data_use": {"storage": "undecided — pending terms review", "display": "undecided", "cache_duration": "undecided", "attribution": "undecided"},
+  "affiliate_status": "Unknown — to verify from official site documentation at review time.",
+  "takedown_contact": "Not yet recorded — to capture during terms review.",
+  "takedown_sla": "Remove source data within 7 days of a verified takedown request (platform policy).",
+  "reviewer": null,
+  "sign_off_date": null,
+  "expiry_date": null,
+  "review_cadence_days": 90,
+  "status": "pending",
+  "status_reason": "Robots reviewed; terms not reviewed. Adapter DISABLED for live mode."
+}

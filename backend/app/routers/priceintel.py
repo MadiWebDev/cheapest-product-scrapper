@@ -1,0 +1,41 @@
+"""PriceIntel v3 routes: /go tracked redirect + compliance gate API."""
+from __future__ import annotations
+
+from fastapi import APIRouter, HTTPException
+from fastapi.responses import RedirectResponse
+
+from app.priceintel.compliance import gate_report, get_record
+from app.priceintel.go import STORE, apply_affiliate, destination_allowed
+
+router = APIRouter(tags=["priceintel"])
+
+
+@router.get("/go/{offer_id}")
+def go(offer_id: str):
+    entry = STORE.get(offer_id)
+    if not entry:
+        raise HTTPException(status_code=404, detail="unknown offer_id (offers are registered by search)")
+    if not destination_allowed(entry["connector"], entry["url"]):
+        raise HTTPException(status_code=400, detail="destination failed allowlist re-validation at click time")
+    final, affiliate_applied = apply_affiliate(entry["url"], entry["connector"])
+    STORE.record_click(offer_id, entry, affiliate_applied)
+    return RedirectResponse(final, status_code=302)
+
+
+@router.get("/api/compliance")
+def compliance_list():
+    return {"sources": gate_report(),
+            "rule": "A source runs in live mode only with an approved, unexpired COMPLIANCE_REVIEW record (directive §6)."}
+
+
+@router.get("/api/compliance/{source_id}")
+def compliance_one(source_id: str):
+    rec = get_record(source_id)
+    if not rec:
+        raise HTTPException(status_code=404, detail="no compliance record for this source")
+    return rec
+
+
+@router.get("/api/clicks/summary")
+def clicks_summary():
+    return STORE.click_summary()

@@ -42,3 +42,28 @@ def value_score(quality: float, landed_total: float|None, best_total: float|None
     return round(w["price"]*price_pts + w["quality"]*quality + w["speed"]*speed_pts + w["reliability"]*reliability,1)
 def median_price(offers: list[RawOffer]) -> float|None:
     ps=[o.price for o in offers if o.price]; return statistics.median(ps) if ps else None
+
+def top_reasons(expl: dict, offer: RawOffer) -> list[str]:
+    """Top-3 human-readable reasons behind the trust/quality score
+    (directive §11). The largest penalty, if any, always gets a slot —
+    warnings are never hidden behind positives."""
+    positives: list[tuple[float, str]] = []
+    if offer.official_store: positives.append((expl.get("seller_points", 0), "Official / brand store"))
+    if offer.seller_rating: positives.append((expl.get("seller_points", 0) * 0.9, f"Seller rating {offer.seller_rating}"))
+    if offer.buyer_protection: positives.append((expl.get("buyer_protection_points", 0), "Buyer protection available"))
+    if offer.warranty: positives.append((expl.get("warranty_points", 0), "Warranty included"))
+    if offer.returns_days and offer.returns_days >= 30: positives.append((expl.get("returns_points", 0), f"{offer.returns_days}-day returns"))
+    if offer.review_count: positives.append((expl.get("review_volume_points", 0), f"{offer.review_count} product reviews"))
+    positives.sort(key=lambda t: t[0], reverse=True)
+    warnings: list[str] = []
+    if expl.get("counterfeit_risk_penalty", 0) > 0:
+        warnings.append("Price far below the market median — counterfeit-risk indicator (not proof of a fake)")
+    if expl.get("fake_review_penalty", 0) > 0:
+        warnings.append("Review-pattern risk signals detected")
+    out: list[str] = []
+    if warnings: out.append(warnings[0])
+    for _, text in positives:
+        if len(out) >= 3: break
+        if text not in out: out.append(text)
+    if len(warnings) > 1 and len(out) < 3: out.append(warnings[1])
+    return out[:3]

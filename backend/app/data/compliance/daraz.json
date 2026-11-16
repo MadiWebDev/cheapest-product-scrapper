@@ -1,0 +1,23 @@
+{
+  "source_id": "daraz",
+  "source_name": "Daraz (Pakistan)",
+  "countries": ["PK", "BD", "LK", "NP", "MM"],
+  "access_method": "official_api_or_affiliate_only",
+  "terms_url": "https://www.daraz.pk/terms-conditions/",
+  "terms_review_date": "2026-11-17",
+  "terms_summary": "Reviewed 2026-11-17. Section 2E (Licence to Access the Site) states the licence does NOT include 'any collection and use of any product listings, descriptions, or prices' nor 'any use of data mining, robots, or similar data gathering and extraction tools', and prohibits commercial use of site content without express written consent. Conclusion: HTML scraping of listings/prices is NOT permitted under the published terms. Only official API / affiliate-program access with Daraz's own credentials and consent is an approved route.",
+  "robots_url": "https://www.daraz.pk/robots.txt",
+  "robots_fetch_date": "2026-11-17",
+  "robots_rules": "User-agent: * — Disallow: /checkout/, /customer/, /cart/, /catalog/, /wangpu/, /shop/*.htm, /*from= and listed campaign paths. (Note: /catalog/ is also the search path, so robots independently blocks the catalogue route.)",
+  "rate_limit_policy": "No automated access permitted under current terms; no rate limit applies because the method is blocked.",
+  "data_use": {"storage": "not permitted via scraping", "display": "via official API/affiliate feed only, per program rules", "cache_duration": "per program rules", "attribution": "per program rules"},
+  "affiliate_status": "Daraz affiliate program exists publicly; enrolment and credentials are an owner action (BLOCKERS B3-003). Not enrolled in this program.",
+  "takedown_contact": "Not published on the reviewed pages; use Daraz Help Center channels on daraz.pk.",
+  "takedown_sla": "Remove source data within 7 days of a verified takedown request (platform policy).",
+  "reviewer": "PriceIntel build agent (public-page review only; not legal advice)",
+  "sign_off_date": null,
+  "expiry_date": "2027-02-15",
+  "review_cadence_days": 90,
+  "status": "blocked",
+  "status_reason": "Published terms prohibit the only access method available without credentials. Adapter stays DISABLED for live mode until an official API/affiliate agreement exists."
+}

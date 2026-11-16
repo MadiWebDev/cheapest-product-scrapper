@@ -1,15 +1,16 @@
 # STATE — PRICEINTEL v3 resume file (directive §1.4)
 
-**Current phase:** 0 — Audit, foundation, Agent Operating System.
-**Last completed task:** Phase 0 baselines measured; boot defects B-01/B-05
-fixed; requirements repaired; verify/eval/e2e/audit-truth scripts created.
+**Current phase:** 1 — Walking skeleton (complete); Phase 2 next.
+**Last completed task:** Phase 1 — compliance gate + records (Daraz
+blocked by its terms §2E; PriceOye/Telemart pending), certainty labels +
+trust reasons in search output, /go tracked redirect, journey tests.
+Suite: 31 passed.
 **Next three tasks:**
-1. Phase 1: compliance registry + gate (Daraz + 2 PK sources reviewed
-   from public pages), certainty-labelled landed cost in the skeleton
-   path, trust top-3 reasons, `GET /go/:offerId` tracked redirect.
-2. Phase 1: API journey test (TestClient) search → match → landed →
-   trust → rank → /go; three-pass notes on the phase task card.
-3. Phase 1 commit + push (push-files), verify remote head.
+1. Phase 2: location intelligence (priority order, manual wins),
+   country config data incl. PK (PTA note, COD, holidays), PKR
+   lakh/crore formatting backend + frontend.
+2. Phase 2: registry/admin extension for compliance records.
+3. Phase 2 commit + push.
 
 **Open blockers:** B3-001 Docker absent in VM; B3-002 `.github/workflows/*`
 push 403; B3-003 no live marketplace keys; B3-004 no LLM key; B3-005 no

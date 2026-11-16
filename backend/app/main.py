@@ -58,6 +58,9 @@ try:
 except Exception:  # finder routers are additive; legacy app must still boot
     pass
 
+from app.routers import priceintel as priceintel_router
+app.include_router(priceintel_router.router)
+
 
 @app.get("/", response_model=SuccessResponse)
 @limiter.limit("100/minute")
