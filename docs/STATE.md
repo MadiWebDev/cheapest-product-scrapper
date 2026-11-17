@@ -1,19 +1,19 @@
 # STATE — PRICEINTEL v3 resume file (directive §1.4)
 
-**Current phase:** 9 — Monetization (complete); Phase 10 next. PUSHES PAUSED (B3-007).
-**Last completed task:** Phase 9 — AffiliateService (tags, bot
-filtering, estimated-vs-confirmed revenue), Paddle billing (webhook
-verification + idempotency tested; live checkout IMPLEMENTED-
-UNVERIFIED B3-005), sponsored separation. Suite: 77 passed.
+**Current phase:** 10 — Alerts (complete); Phase 11 next. PUSHES PAUSED (B3-007).
+**Last completed task:** Phase 10 — alerts v2 (quiet hours, dedupe,
+unsubscribe tokens, delivery honesty), watchlists, Telegram webhook
+(fixtures), WhatsApp official-only BLOCKED. Suite: 84 passed.
 Pushes confirmed: p0 3ef8628d, p1 6538b242, p2 1f71a35e, p3 2000846d.
 Phase 4 push UNVERIFIED (B3-007) — reconcile via list_commits before
 any re-push; phases 4-5 commits are local until then.
 **Next three tasks:**
-1. Phase 10: alerts/watchlists re-evidence + quiet hours,
-   dedupe, one-click unsubscribe token.
-2. Phase 10: Telegram webhook handler behind env flag (fixtures);
-   WhatsApp official-API design + flag (live BLOCKED).
-3. Phase 10 commit (push pending B3-007 reconciliation).
+1. Phase 11: admin completion — match-review queue
+   (approve/split/merge + audit trail), seller scorecards with
+   right-of-reply, audit logs, RBAC tests.
+2. Phase 11: developer API (hashed keys, quotas, usage), seller
+   intelligence basics with per-tenant isolation tests.
+3. Phase 11 commit (push pending B3-007 reconciliation).
 
 **Open blockers:** B3-001 Docker absent in VM; B3-002 `.github/workflows/*`
 push 403; B3-003 no live marketplace keys; B3-004 no LLM key; B3-005 no

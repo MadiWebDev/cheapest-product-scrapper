@@ -17,5 +17,10 @@ def notify(channel: str, destination: str, message: str) -> dict:
         url=f"https://api.telegram.org/bot{tok}/sendMessage?"+urllib.parse.urlencode({"chat_id":destination,"text":message})
         urllib.request.urlopen(url, timeout=10); return {"sent":True}
     if channel=="whatsapp": return {"sent":False,"link":f"https://wa.me/{destination}?text="+urllib.parse.quote(message),"reason":"WhatsApp delivered as click-to-send link"}
+    if channel=="whatsapp_official":
+        # v3 policy: official WhatsApp Cloud API only for programmatic
+        # sends. No credentials exist in this environment (BLOCKED).
+        if not os.getenv("WHATSAPP_CLOUD_TOKEN"): return {"sent":False,"reason":"WhatsApp official Cloud API not configured (WHATSAPP_CLOUD_TOKEN)"}
+        return {"sent":False,"reason":"WhatsApp Cloud API send path requires a configured phone-number id + template (owner setup)"}
     if channel=="webpush": return {"sent":False,"reason":"web push requires VAPID keys + browser subscription (env-gated)"}
     return {"sent":False,"reason":"unknown channel"}

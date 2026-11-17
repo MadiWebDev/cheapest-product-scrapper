@@ -81,6 +81,79 @@ def adapters():
                          for m in MANIFESTS.values()]}
 
 
+@router.post("/api/alerts")
+def create_alert(body: dict):
+    from app.priceintel.alerts_v2 import SERVICE
+    return SERVICE.create_alert(body.get("user_ref", ""), body.get("query", ""),
+                                float(body.get("target_price", 0)), body.get("channel", "email"),
+                                body.get("destination", ""), body.get("quiet_start"),
+                                body.get("quiet_end"), body.get("tz", "Asia/Karachi"))
+
+
+@router.get("/api/alerts/unsubscribe")
+def alert_unsubscribe(token: str):
+    from app.priceintel.alerts_v2 import SERVICE
+    ok = SERVICE.unsubscribe(token)
+    if not ok:
+        raise HTTPException(status_code=404, detail="unknown unsubscribe token")
+    return {"unsubscribed": True}
+
+
+@router.post("/api/alerts/evaluate")
+def alert_evaluate(body: dict):
+    from app.priceintel.alerts_v2 import SERVICE
+    return {"results": SERVICE.evaluate(body.get("query", ""), float(body.get("best_price", 0)))}
+
+
+@router.post("/api/watchlist")
+def watch_add(body: dict):
+    from app.priceintel.alerts_v2 import SERVICE
+    return SERVICE.watch_add(body.get("user_ref", ""), body.get("product_ref", ""), body.get("note", ""))
+
+
+@router.get("/api/watchlist")
+def watch_list(user_ref: str):
+    from app.priceintel.alerts_v2 import SERVICE
+    return {"items": SERVICE.watch_list(user_ref)}
+
+
+@router.post("/api/telegram/webhook")
+async def telegram_webhook(request: Request):
+    """Telegram bot webhook (directive §15). Active only when
+    TELEGRAM_WEBHOOK_SECRET is configured; verifies Telegram's secret
+    header. Live delivery needs TELEGRAM_BOT_TOKEN (B3-005)."""
+    import os as _os
+    from app.priceintel.alerts_v2 import SERVICE
+    from app.services.alerts import notify as _notify
+    secret = _os.getenv("TELEGRAM_WEBHOOK_SECRET")
+    if not secret:
+        raise HTTPException(status_code=503, detail="telegram webhook disabled (TELEGRAM_WEBHOOK_SECRET not set)")
+    if request.headers.get("x-telegram-bot-api-secret-token") != secret:
+        raise HTTPException(status_code=401, detail="bad telegram secret")
+    update = await request.json()
+    msg = (update.get("message") or {})
+    text = (msg.get("text") or "").strip()
+    chat_id = str((msg.get("chat") or {}).get("id", ""))
+    if not chat_id:
+        return {"ok": True, "ignored": "no chat"}
+    if text.startswith("/start"):
+        reply = "PriceIntel alerts bot. Use the web app to create alerts; send /alerts to list yours, /stop to pause them."
+    elif text.startswith("/alerts"):
+        mine = [a for a in SERVICE.alerts.values() if a["destination"] == chat_id]
+        reply = "\n".join(f"- {a['query']} <= {a['target_price']} ({'active' if a['active'] else 'paused'})" for a in mine) or "No alerts for this chat yet."
+    elif text.startswith("/stop"):
+        n = 0
+        for a in SERVICE.alerts.values():
+            if a["destination"] == chat_id and a["active"]:
+                a["active"] = False
+                n += 1
+        reply = f"Paused {n} alert(s)."
+    else:
+        reply = "Commands: /start, /alerts, /stop"
+    res = _notify("telegram", chat_id, reply)
+    return {"ok": True, "delivery": res}
+
+
 @router.get("/api/billing/plans")
 def billing_plans():
     from app.priceintel.billing import PLANS
