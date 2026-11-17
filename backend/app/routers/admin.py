@@ -35,3 +35,15 @@ def admin_compliance_update(source_id: str, body: dict):
     except KeyError: raise HTTPException(404, "unknown source")
     except ValueError as e: raise HTTPException(400, str(e))
     return {"updated": source_id, "status": rec["status"], "live_enabled": rec["status"]=="approved"}
+
+# --- v3 Phase 9: monetization admin ---
+from app.priceintel.affiliate import CONVERSIONS as _CONV, revenue_report as _rev
+from app.priceintel.sponsored import register_sponsored as _reg_sponsored
+@router.get("/admin/revenue")
+def admin_revenue(): return _rev()
+@router.post("/admin/conversions")
+def admin_conversion(body: dict):
+    added=_CONV.add(body.get("external_id",""), body.get("connector",""), float(body.get("amount",0)), body.get("currency","USD"))
+    return {"added": added, "duplicate": not added}
+@router.post("/admin/sponsored")
+def admin_sponsored(body: dict): return _reg_sponsored(body)

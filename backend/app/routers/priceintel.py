@@ -12,14 +12,14 @@ router = APIRouter(tags=["priceintel"])
 
 
 @router.get("/go/{offer_id}")
-def go(offer_id: str):
+def go(offer_id: str, request: Request):
     entry = STORE.get(offer_id)
     if not entry:
         raise HTTPException(status_code=404, detail="unknown offer_id (offers are registered by search)")
     if not destination_allowed(entry["connector"], entry["url"]):
         raise HTTPException(status_code=400, detail="destination failed allowlist re-validation at click time")
     final, affiliate_applied = apply_affiliate(entry["url"], entry["connector"])
-    STORE.record_click(offer_id, entry, affiliate_applied)
+    STORE.record_click(offer_id, entry, affiliate_applied, request.headers.get("user-agent"))
     return RedirectResponse(final, status_code=302)
 
 
@@ -79,6 +79,36 @@ def adapters():
                           "live_enabled": is_live_enabled(m["id"]),
                           "health": HEALTH.for_connector(m["id"])}
                          for m in MANIFESTS.values()]}
+
+
+@router.get("/api/billing/plans")
+def billing_plans():
+    from app.priceintel.billing import PLANS
+    return {"provider": "paddle", "plans": PLANS,
+            "note": "Prices are this product's own list prices; checkout activates when Paddle keys are configured."}
+
+
+@router.post("/api/billing/checkout")
+def billing_checkout(body: dict):
+    from app.priceintel.billing import PROVIDER
+    return PROVIDER.create_checkout(body.get("plan", ""), body.get("user_ref", ""))
+
+
+@router.post("/api/billing/webhook/paddle")
+async def paddle_webhook(request: Request):
+    from app.priceintel.billing import PROVIDER
+    raw = await request.body()
+    sig = request.headers.get("paddle-signature", "")
+    if not PROVIDER.verify_webhook(raw, sig):
+        raise HTTPException(status_code=401, detail="invalid webhook signature")
+    import json as _json
+    return PROVIDER.handle_event(_json.loads(raw))
+
+
+@router.get("/api/sponsored")
+def sponsored_list():
+    from app.priceintel.sponsored import all_sponsored
+    return {"sponsored": all_sponsored()}
 
 
 @router.post("/api/assistant")

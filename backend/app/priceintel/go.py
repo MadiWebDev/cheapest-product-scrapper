@@ -90,6 +90,15 @@ def apply_affiliate(url: str, connector: str) -> tuple[str, bool]:
     return urllib.parse.urlunparse(u._replace(query=urllib.parse.urlencode(q))), True
 
 
+BOT_TOKENS = ("bot", "crawler", "spider", "preview", "headless", "curl", "wget",
+              "python-requests", "monitor", "pingdom")
+
+
+def is_bot_ua(user_agent: str | None) -> bool:
+    ua = (user_agent or "").lower()
+    return any(tok in ua for tok in BOT_TOKENS)
+
+
 class OfferStore:
     """In-process offer + click store for the walking skeleton.
 
@@ -118,13 +127,15 @@ class OfferStore:
     def get(self, offer_id: str) -> dict | None:
         return self.offers.get(offer_id)
 
-    def record_click(self, offer_id: str, entry: dict, affiliate_applied: bool) -> dict:
+    def record_click(self, offer_id: str, entry: dict, affiliate_applied: bool,
+                     user_agent: str | None = None) -> dict:
         click = {
             "offer_id": offer_id,
             "connector": entry["connector"],
             "ts": time.time(),
             "affiliate_applied": affiliate_applied,
             "demo": entry.get("demo", False),
+            "bot": is_bot_ua(user_agent),
         }
         self.clicks.append(click)
         return click
