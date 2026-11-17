@@ -1,20 +1,20 @@
 # STATE — PRICEINTEL v3 resume file (directive §1.4)
 
-**Current phase:** 7 — AI + scam + MCP (complete); Phase 8 next. PUSHES PAUSED (B3-007).
-**Last completed task:** Phase 7 — AIProvider + grounded deterministic
-assistant (LLM path BLOCKED B3-004), scam-ad checker (eval recall
-1.000), MCP endpoint (auth + rate limit). Suite: 69 passed.
+**Current phase:** 8 — Web app (complete); Phase 9 next. PUSHES PAUSED (B3-007).
+**Last completed task:** Phase 8 — evidence-rich cards + drawer,
+methodology page, en/ur/ar i18n + RTL + missing-key check, Lite mode,
+accessibility checklist. Frontend build green, First Load JS 87.3 kB.
+Backend suite: 69 passed.
 Pushes confirmed: p0 3ef8628d, p1 6538b242, p2 1f71a35e, p3 2000846d.
 Phase 4 push UNVERIFIED (B3-007) — reconcile via list_commits before
 any re-push; phases 4-5 commits are local until then.
 **Next three tasks:**
-1. Phase 8: result cards gain certainty badge, fair-price
-   position, match confidence, freshness, trust top reason; product
-   evidence (Deal-Passport-style drawer is Phase 13).
-2. Phase 8: methodology page, en/ur/ar i18n scaffolding + RTL +
-   missing-key check, Lite mode toggle, accessibility checklist,
-   First Load JS measurement.
-3. Phase 8 commit (push pending B3-007 reconciliation).
+1. Phase 9: AffiliateService over /go (env/config IDs, bot
+   filtering, estimated-vs-confirmed revenue analytics separated).
+2. Phase 9: BillingProvider over Paddle (sandbox patterns, webhook
+   signature + idempotency tests); sponsored offers as a separate
+   labeled list (separation test).
+3. Phase 9 commit (push pending B3-007 reconciliation).
 
 **Open blockers:** B3-001 Docker absent in VM; B3-002 `.github/workflows/*`
 push 403; B3-003 no live marketplace keys; B3-004 no LLM key; B3-005 no
