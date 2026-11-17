@@ -1,21 +1,21 @@
 # STATE — PRICEINTEL v3 resume file (directive §1.4)
 
-**Current phase:** 12 — Mobile + extension scaffolds (complete); Phase 13 next. PUSHES PAUSED (B3-007).
-**Last completed task:** Phase 12 — Expo mobile scaffold + MV3
-extension (real API clients, flag-gated barcode/snap), web deep
-links. Both scaffolds IMPLEMENTED-UNVERIFIED (no device/browser
-runtime in VM). Backend suite: 89 passed.
+**Current phase:** 13 — §16.2 features (complete); Phase 14 next. PUSHES PAUSED (B3-007).
+**Last completed task:** Phase 13 — all eight §16.2 features built
+and flag-gated (safety kit, compatibility, budget planner, outcomes,
+evidence pack, alternatives, Deal Passport, smart digest).
+Suite: 96 passed.
 Pushes confirmed: p0 3ef8628d, p1 6538b242, p2 1f71a35e, p3 2000846d.
 Phase 4 push UNVERIFIED (B3-007) — reconcile via list_commits before
 any re-push; phases 4-5 commits are local until then.
 **Next three tasks:**
-1. Phase 13: §16.2 features in priority order, flag-gated:
-   used-phone safety kit, compatibility checker, budget planner,
-   purchase-outcome feedback, price-match evidence pack,
-   alternatives engine, Deal Passport, smart digest job.
-2. Phase 13: anything needing unobtainable data gets interface +
-   fixture + BLOCKED note.
-3. Phase 13 commit (push pending B3-007 reconciliation).
+1. Phase 14: coverage on pricing/matching/trust/ranking
+   modules (measure real number vs 80% target); security pass
+   (incl. legacy admin auth L-069); load smoke; chaos tests.
+2. Phase 14: docs completion (COMPLIANCE/SECURITY/DATABASE/API/
+   DEPLOYMENT/TESTING/EVALUATION/MONETIZATION/PERFORMANCE/
+   RUNBOOKS/METHODOLOGY/TRANSPARENCY) + FINAL_REPORT.md.
+3. Phase 14 commit + final zip (push pending B3-007).
 
 **Open blockers:** B3-001 Docker absent in VM; B3-002 `.github/workflows/*`
 push 403; B3-003 no live marketplace keys; B3-004 no LLM key; B3-005 no

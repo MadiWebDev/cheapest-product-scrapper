@@ -81,6 +81,151 @@ def adapters():
                          for m in MANIFESTS.values()]}
 
 
+def _feature(name: str):
+    from app.priceintel.features import feature_enabled
+    if not feature_enabled(name):
+        raise HTTPException(status_code=503, detail=f"feature {name} disabled")
+
+
+@router.get("/api/features/used-phone-kit")
+def used_phone_kit():
+    _feature("used_phone_kit")
+    from app.priceintel.features import USED_PHONE_KIT
+    return USED_PHONE_KIT
+
+
+@router.post("/api/features/compatibility")
+def compatibility(body: dict):
+    _feature("compatibility")
+    from app.priceintel.features import check_compatibility
+    return check_compatibility(body.get("device", {}), body.get("country", "PK"))
+
+
+@router.post("/api/features/budget-plan")
+def budget_plan(body: dict):
+    _feature("budget_planner")
+    from app.services.search import search as run_search
+    country, currency = body.get("country", "PK"), body.get("currency", "PKR")
+    plan, total, unmet = [], 0.0, []
+    for item in body.get("items", []):
+        r = run_search(item.get("query", ""), {}, country, currency)
+        best = None
+        for p in r["products"]:
+            for o in p["offers"]:
+                if o.get("landed") and not o.get("quarantined"):
+                    if best is None or o["landed"]["total"] < best["landed"]["total"]:
+                        best = o
+        cap = float(item.get("max_price", 0))
+        if best and best["landed"]["total"] <= cap:
+            plan.append({"query": item["query"], "title": best["offer"]["title"],
+                         "landed_total": best["landed"]["total"], "currency": currency,
+                         "go_url": best["go_url"], "within_budget": True})
+            total += best["landed"]["total"]
+        else:
+            unmet.append({"query": item["query"], "cap": cap,
+                          "cheapest_found": best["landed"]["total"] if best else None})
+    return {"plan": plan, "total": round(total, 2), "currency": currency, "unmet": unmet}
+
+
+@router.post("/api/features/outcomes")
+def outcome_add(body: dict):
+    _feature("outcomes")
+    from app.priceintel.features import OUTCOME_STORE
+    try:
+        return OUTCOME_STORE.add(body.get("seller", ""), body.get("outcome", ""),
+                                 body.get("note", ""), body.get("user_ref", ""))
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+
+@router.get("/api/features/outcomes/{seller}")
+def outcome_summary(seller: str):
+    _feature("outcomes")
+    from app.priceintel.features import OUTCOME_STORE
+    return OUTCOME_STORE.summary(seller)
+
+
+@router.get("/api/features/evidence-pack")
+def evidence_pack(query: str, country: str = "PK", currency: str = "PKR"):
+    _feature("evidence_pack")
+    import datetime
+    from app.services.search import search as run_search
+    r = run_search(query, {}, country, currency)
+    offers = []
+    for p in r["products"]:
+        for o in p["offers"]:
+            offers.append({"product": p["title"], "connector": o["offer"]["connector"],
+                           "price": o["offer"]["price"], "landed_total": o["landed"]["total"] if o["landed"] else None,
+                           "trust_score": o["trust_score"], "certainty": o["certainty"]["labels"],
+                           "url": o["offer"]["url"], "go_url": o["go_url"]})
+    return {"generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            "query": query, "ship_to": country, "currency": currency,
+            "purpose": "Price-match evidence: dated snapshot of comparable offers with landed totals and trust scores.",
+            "offers": offers, "affiliate_disclosure": r.get("affiliate_disclosure")}
+
+
+@router.get("/api/features/alternatives")
+def alternatives(query: str, country: str = "PK", currency: str = "PKR"):
+    _feature("alternatives")
+    from app.services.search import search as run_search
+    r = run_search(query, {}, country, currency)
+    if not r["products"]:
+        return {"alternatives": []}
+    main = r["products"][0]
+    main_best = main["offers"][0]["landed"]["total"] if main["offers"] and main["offers"][0].get("landed") else None
+    out = []
+    for p in r["products"][1:]:
+        if not p["offers"] or not p["offers"][0].get("landed"):
+            continue
+        o = p["offers"][0]
+        delta = None
+        if main_best:
+            delta = round((o["landed"]["total"] - main_best) / main_best * 100, 1)
+        out.append({"title": p["title"], "landed_total": o["landed"]["total"],
+                    "trust_score": o["trust_score"], "vs_main_pct": delta,
+                    "why": ("cheaper than the main match" if (delta or 0) < 0 else "a different model in the same search — compare specs before switching")})
+    return {"main": main["title"], "alternatives": out}
+
+
+@router.get("/api/features/deal-passport")
+def deal_passport(query: str, country: str = "PK", currency: str = "PKR"):
+    _feature("deal_passport")
+    from app.priceintel.features import PASSPORT
+    from app.services.search import search as run_search
+    r = run_search(query, {}, country, currency)
+    if not r["products"]:
+        return {"product": None, "timeline": []}
+    p = r["products"][0]
+    PASSPORT.record(p["title"], "search_check", {"country": country, "offers": len(p["offers"]),
+                                                 "band_hidden": (p.get("fair_price_band") or {}).get("hidden")})
+    best = p["offers"][0] if p["offers"] else {}
+    return {"product": p["title"], "fair_price_band": p.get("fair_price_band"),
+            "best_trust_score": best.get("trust_score"), "best_pci": (best.get("pci") or {}).get("index"),
+            "warnings": (best.get("trust") or {}).get("warnings", []),
+            "timeline": PASSPORT.for_product(p["title"])}
+
+
+@router.post("/api/features/digest/run")
+def digest_run(body: dict):
+    _feature("smart_digest")
+    from app.priceintel.alerts_v2 import SERVICE
+    from app.services.alerts import notify
+    from app.services.search import search as run_search
+    user_ref = body.get("user_ref", "")
+    items = SERVICE.watch_list(user_ref)
+    lines = []
+    for it in items:
+        r = run_search(it["product_ref"], {}, body.get("country", "PK"), body.get("currency", "PKR"))
+        if r["products"] and r["products"][0]["offers"]:
+            o = r["products"][0]["offers"][0]
+            if o.get("landed"):
+                lines.append(f"{it['product_ref']}: best landed {o['landed']['currency']} {o['landed']['total']} via {o['offer']['connector']}")
+    digest = {"user_ref": user_ref, "items": lines, "generated": True}
+    dest = body.get("destination", "")
+    delivery = notify(body.get("channel", "email"), dest, "\n".join(lines) or "No watched items.") if dest else {"sent": False, "reason": "no destination"}
+    return {"digest": digest, "delivery": delivery}
+
+
 @router.post("/api/alerts")
 def create_alert(body: dict):
     from app.priceintel.alerts_v2 import SERVICE
