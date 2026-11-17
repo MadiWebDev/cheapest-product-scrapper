@@ -1,0 +1,240 @@
+{
+ "synthetic": true,
+ "note": "Inputs + expectations derived from app/data duty.json/vat_gst.json rule tables; totals recomputed independently in tests/test_price_truth.py",
+ "cases": [
+  {
+   "name": "UAE->PK smartphone (PTA-relevant, duty-free category, 17% GST)",
+   "offer": {
+    "price": 3670.0,
+    "currency": "AED",
+    "shipping_price": 36.7
+   },
+   "country": "PK",
+   "currency": "PKR",
+   "category": "phones",
+   "fx": {
+    "USD": 1.0,
+    "AED": 3.67,
+    "PKR": 278.0
+   },
+   "expect": {
+    "duty_applies": false,
+    "tax_rate": 0.17,
+    "handling_applies": true
+   }
+  },
+  {
+   "name": "US domestic under de minimis",
+   "offer": {
+    "price": 100.0,
+    "currency": "USD",
+    "shipping_price": 0.0
+   },
+   "country": "US",
+   "currency": "USD",
+   "category": "electronics",
+   "fx": {
+    "USD": 1.0
+   },
+   "expect": {
+    "duty_applies": false,
+    "tax_rate": 0.0,
+    "handling_applies": false
+   }
+  },
+  {
+   "name": "DE clothing with 12% duty + 19% VAT",
+   "offer": {
+    "price": 200.0,
+    "currency": "USD",
+    "shipping_price": 20.0
+   },
+   "country": "DE",
+   "currency": "EUR",
+   "category": "clothing",
+   "fx": {
+    "USD": 1.0,
+    "EUR": 0.92
+   },
+   "expect": {
+    "duty_applies": true,
+    "tax_rate": 0.19,
+    "handling_applies": true
+   }
+  },
+  {
+   "name": "IN electronics, zero de minimis",
+   "offer": {
+    "price": 50.0,
+    "currency": "USD",
+    "shipping_price": 5.0
+   },
+   "country": "IN",
+   "currency": "INR",
+   "category": "electronics",
+   "fx": {
+    "USD": 1.0,
+    "INR": 83.0
+   },
+   "expect": {
+    "duty_applies": false,
+    "tax_rate": null,
+    "handling_applies": true
+   }
+  },
+  {
+   "name": "GB shoes above de minimis",
+   "offer": {
+    "price": 200.0,
+    "currency": "USD",
+    "shipping_price": 15.0
+   },
+   "country": "GB",
+   "currency": "GBP",
+   "category": "shoes",
+   "fx": {
+    "USD": 1.0,
+    "GBP": 0.79
+   },
+   "expect": {
+    "duty_applies": true,
+    "tax_rate": 0.2,
+    "handling_applies": true
+   }
+  },
+  {
+   "name": "JP under high de minimis (JPY 10000 ~= USD 10000 table value)",
+   "offer": {
+    "price": 300.0,
+    "currency": "USD",
+    "shipping_price": 10.0
+   },
+   "country": "JP",
+   "currency": "JPY",
+   "category": "default",
+   "fx": {
+    "USD": 1.0,
+    "JPY": 155.0
+   },
+   "expect": {
+    "duty_applies": false,
+    "tax_rate": null,
+    "handling_applies": false
+   }
+  },
+  {
+   "name": "BR default category 5% duty",
+   "offer": {
+    "price": 100.0,
+    "currency": "USD",
+    "shipping_price": 10.0
+   },
+   "country": "BR",
+   "currency": "BRL",
+   "category": "default",
+   "fx": {
+    "USD": 1.0,
+    "BRL": 5.1
+   },
+   "expect": {
+    "duty_applies": true,
+    "tax_rate": null,
+    "handling_applies": true
+   }
+  },
+  {
+   "name": "AE->SA under SAR de minimis",
+   "offer": {
+    "price": 500.0,
+    "currency": "USD",
+    "shipping_price": 25.0
+   },
+   "country": "SA",
+   "currency": "SAR",
+   "category": "electronics",
+   "fx": {
+    "USD": 1.0,
+    "SAR": 3.75
+   },
+   "expect": {
+    "duty_applies": false,
+    "tax_rate": null,
+    "handling_applies": false
+   }
+  },
+  {
+   "name": "PK domestic PKR no conversion",
+   "offer": {
+    "price": 85000.0,
+    "currency": "PKR",
+    "shipping_price": 500.0
+   },
+   "country": "PK",
+   "currency": "PKR",
+   "category": "phones",
+   "fx": {
+    "USD": 1.0,
+    "PKR": 278.0
+   },
+   "expect": {
+    "duty_applies": false,
+    "tax_rate": 0.17,
+    "handling_applies": true
+   }
+  },
+  {
+   "name": "Free shipping offer to GB (toys 4.5% duty)",
+   "offer": {
+    "price": 150.0,
+    "currency": "USD",
+    "shipping_price": null
+   },
+   "country": "GB",
+   "currency": "GBP",
+   "category": "toys",
+   "fx": {
+    "USD": 1.0,
+    "GBP": 0.79
+   },
+   "expect": {
+    "duty_applies": true,
+    "tax_rate": 0.2,
+    "handling_applies": true
+   }
+  },
+  {
+   "name": "Missing FX currency returns None",
+   "offer": {
+    "price": 10.0,
+    "currency": "XXX",
+    "shipping_price": 0.0
+   },
+   "country": "US",
+   "currency": "USD",
+   "category": "default",
+   "fx": {
+    "USD": 1.0
+   },
+   "expect": {
+    "result": null
+   }
+  },
+  {
+   "name": "Missing price returns None",
+   "offer": {
+    "price": null,
+    "currency": "USD",
+    "shipping_price": 0.0
+   },
+   "country": "US",
+   "currency": "USD",
+   "category": "default",
+   "fx": {
+    "USD": 1.0
+   },
+   "expect": {
+    "result": null
+   }
+  }
+ ]
+}

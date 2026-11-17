@@ -51,3 +51,15 @@ attempts maximum per blocker; never loop, never fake past one.
 - **Needed:** Playwright install on a capable machine or CI.
 - **Fallback:** API-level journey tests via TestClient against the real
   app (marked as such in the ledger — never described as Playwright).
+
+## B3-007 — Push approval channel timed out (2026-11-17)
+- **Symptom:** the Phase 4 push_files call was interrupted by a service
+  restart; the follow-up verification call's egress approval timed out
+  ("action was not performed").
+- **Impact:** Phase 4 push outcome UNVERIFIED — it may or may not have
+  landed. Phases 4+ pushes are PENDING until the channel is used again.
+- **Reconciliation (do this first when pushes resume):** list_commits —
+  if a phase-4 commit sits on top of 2000846d, Phase 4 landed; mark it
+  confirmed and do NOT re-push. If head is still 2000846d, push Phase 4,
+  then continue per-phase. Never force-push.
+- **Program state:** local commits continue; nothing is blocked locally.

@@ -71,12 +71,26 @@ def search(query: str, filters: dict|None=None, country: str="US", currency: str
         best=min([s["landed"]["total"] for s in scored if s["landed"]] or [0])
         for s in scored:
             s["value_score"]=value_score(s["quality_score"], s["landed"]["total"] if s["landed"] else None, best or None, s["offer"].get("delivery_days"), weights)
+        # Price Truth (directive §10): fair band, PCI, glitch quarantine.
+        import statistics as _st
+        from app.priceintel.price_truth import fair_price_band, band_position, is_glitch, price_confidence_index
+        totals=[s["landed"]["total"] for s in scored if s["landed"]]
+        band=fair_price_band(totals); med=_st.median(totals) if totals else 0
+        for s in scored:
+            if s["landed"]:
+                q=is_glitch(s["landed"]["total"], med); s["quarantined"]=q
+                if q: s["quarantine_reason"]="Price >60% below the group median — quarantined pending re-verification"
+                s["fair_position"]=band_position(s["landed"]["total"], band)
+                s["pci"]=price_confidence_index(band_sample=band["sample_size"], shipping_certainty=s["certainty"]["labels"]["shipping"], fx_stale=fx_stale, rating=s["offer"].get("rating"), review_count=s["offer"].get("review_count") or 0, quarantined=q)
+            else: s["quarantined"]=False; s["fair_position"]=None; s["pci"]=None
         scored.sort(key=lambda s: s["value_score"], reverse=True)
+        scored.sort(key=lambda s: 1 if s.get("quarantined") else 0)  # quarantined last, stable
         if scored:
             scored[0]["badges"]=["Best value"]
-            by_price=min(scored, key=lambda s: s["landed"]["total"] if s["landed"] else 1e18); by_price.setdefault("badges",[]).append("Best price")
+            cands=[s for s in scored if not s.get("quarantined")] or scored
+            by_price=min(cands, key=lambda s: s["landed"]["total"] if s["landed"] else 1e18); by_price.setdefault("badges",[]).append("Best price")
             by_q=max(scored, key=lambda s: s["quality_score"]); by_q.setdefault("badges",[]).append("Best quality")
-        products.append({"id":g["id"],"title":g["title"],"brand":g["brand"],"gtin":g["gtin"],"accessory":g["accessory"],"variant":g.get("variant"),"offers":scored})
+        products.append({"id":g["id"],"title":g["title"],"brand":g["brand"],"gtin":g["gtin"],"accessory":g["accessory"],"variant":g.get("variant"),"fair_price_band":band,"offers":scored})
     sort=(filters.get("sort") or "best_value")
     keyf={"lowest_landed":lambda p: min([o["landed"]["total"] for o in p["offers"] if o["landed"]] or [1e18]),"best_quality":lambda p: -max(o["quality_score"] for o in p["offers"]),"lowest_item":lambda p: min([o["offer"]["price"] or 1e18 for o in p["offers"]])}
     if sort in keyf: products.sort(key=keyf[sort])

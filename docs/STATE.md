@@ -1,16 +1,18 @@
 # STATE — PRICEINTEL v3 resume file (directive §1.4)
 
-**Current phase:** 4 — Matching v2 (complete); Phase 5 next.
-**Last completed task:** Phase 4 — matching v2 (confidence + reasons,
-9 hard separation axes), 244-pair eval (false-merge 0.0000, false-split
-0.0167), PK relevance set (hit-rate@5 1.000). Suite: 51 passed.
+**Current phase:** 5 — Price truth (complete); Phase 6 next. PUSHES PAUSED (B3-007): phase-4 push outcome unverified, phases 4+ pending reconciliation.
+**Last completed task:** Phase 5 — landed golden cases (12), FX
+hourly cache + failover tests, fair-price band + PCI + glitch
+quarantine wired into search. Suite: 56 passed.
 Pushes confirmed: p0 3ef8628d, p1 6538b242, p2 1f71a35e, p3 2000846d.
+Phase 4 push UNVERIFIED (B3-007) — reconcile via list_commits before
+any re-push; phases 4-5 commits are local until then.
 **Next three tasks:**
-1. Phase 5: landed v2 golden cases (>=10 incl. UAE->PK phone) in
-   eval + tests; FX failover verification tests.
-2. Phase 5: fair-price band + Price Confidence Index + glitch
-   quarantine (>60% drop) in a price-truth module wired to search.
-3. Phase 5 commit + push.
+1. Phase 6: trust v2 — decomposable score storing inputs+version,
+   suspicious-offer categories, ranking explanation per result.
+2. Phase 6: fairness audit script + architectural test (ranking has
+   no access to commission/campaign data).
+3. Phase 6 commit (push pending B3-007 reconciliation).
 
 **Open blockers:** B3-001 Docker absent in VM; B3-002 `.github/workflows/*`
 push 403; B3-003 no live marketplace keys; B3-004 no LLM key; B3-005 no
