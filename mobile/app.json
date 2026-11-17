@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "PriceIntel",
+    "slug": "priceintel",
+    "scheme": "priceintel",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "platforms": ["ios", "android"],
+    "ios": { "bundleIdentifier": "tools.priceintel.app" },
+    "android": { "package": "tools.priceintel.app" }
+  }
+}

@@ -63,6 +63,7 @@ export default function SearchApp(){
     <details><summary className="cursor-pointer text-sm">Why this quality score?</summary><pre className="text-xs">{JSON.stringify(best.quality_explanation,null,1)}</pre></details>
     <details><summary className="cursor-pointer text-sm">Compare all {p.offers.length} offers</summary>{p.offers.map((o,i)=><p key={i} className="text-sm">{o.offer.connector}: {o.landed?o.landed.total:'—'} (Q {o.quality_score}) {(o.badges||[]).join(', ')}</p>)}</details>
     <div className="mt-2 flex gap-2"><a className="rounded bg-green-600 px-3 py-1 text-white" href={best.go_url?`${API}${best.go_url}`:best.offer.url} target="_blank" rel="noreferrer">Buy</a>
+    <a className="rounded border px-3 py-1" href={`priceintel://product?title=${encodeURIComponent(p.title)}`}>Open in app</a>
     <button className="rounded border px-3 py-1" onClick={()=>compare.length<4&&setCompare([...compare,p])}>Compare</button>
     <button className="rounded border px-3 py-1" onClick={()=>alert('Alert/watchlist: use POST /api alerts in the API (Phase 8)')}>Set price alert</button></div>
    </article>})}
