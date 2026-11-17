@@ -1,0 +1,135 @@
+{
+ "synthetic": true,
+ "items": [
+  {
+   "id": "p0",
+   "title": "Apple iPhone 15 128GB Black",
+   "brand": "Apple"
+  },
+  {
+   "id": "p0c",
+   "title": "Apple iPhone 15 Case - Shockproof Cover",
+   "brand": "Apple"
+  },
+  {
+   "id": "p1",
+   "title": "Apple iPhone 14 128GB Black",
+   "brand": "Apple"
+  },
+  {
+   "id": "p1c",
+   "title": "Apple iPhone 14 Case - Shockproof Cover",
+   "brand": "Apple"
+  },
+  {
+   "id": "p2",
+   "title": "Samsung Galaxy S24 128GB Black",
+   "brand": "Samsung"
+  },
+  {
+   "id": "p2c",
+   "title": "Samsung Galaxy S24 Case - Shockproof Cover",
+   "brand": "Samsung"
+  },
+  {
+   "id": "p3",
+   "title": "Samsung Galaxy S23 128GB Black",
+   "brand": "Samsung"
+  },
+  {
+   "id": "p3c",
+   "title": "Samsung Galaxy S23 Case - Shockproof Cover",
+   "brand": "Samsung"
+  },
+  {
+   "id": "p4",
+   "title": "Samsung Galaxy A54 128GB Black",
+   "brand": "Samsung"
+  },
+  {
+   "id": "p4c",
+   "title": "Samsung Galaxy A54 Case - Shockproof Cover",
+   "brand": "Samsung"
+  },
+  {
+   "id": "p5",
+   "title": "Google Pixel 8 128GB Black",
+   "brand": "Google"
+  },
+  {
+   "id": "p5c",
+   "title": "Google Pixel 8 Case - Shockproof Cover",
+   "brand": "Google"
+  },
+  {
+   "id": "p6",
+   "title": "Xiaomi Redmi Note 13 128GB Black",
+   "brand": "Xiaomi"
+  },
+  {
+   "id": "p6c",
+   "title": "Xiaomi Redmi Note 13 Case - Shockproof Cover",
+   "brand": "Xiaomi"
+  },
+  {
+   "id": "p7",
+   "title": "Infinix Hot 40 128GB Black",
+   "brand": "Infinix"
+  },
+  {
+   "id": "p7c",
+   "title": "Infinix Hot 40 Case - Shockproof Cover",
+   "brand": "Infinix"
+  },
+  {
+   "id": "p8",
+   "title": "Tecno Spark 20 128GB Black",
+   "brand": "Tecno"
+  },
+  {
+   "id": "p8c",
+   "title": "Tecno Spark 20 Case - Shockproof Cover",
+   "brand": "Tecno"
+  },
+  {
+   "id": "p9",
+   "title": "OnePlus 12R 128GB Black",
+   "brand": "OnePlus"
+  },
+  {
+   "id": "p9c",
+   "title": "OnePlus 12R Case - Shockproof Cover",
+   "brand": "OnePlus"
+  },
+  {
+   "id": "h1",
+   "title": "Sony WH-1000XM5 Wireless Headphones",
+   "brand": "Sony"
+  },
+  {
+   "id": "h2",
+   "title": "Sony WH-1000XM4 Wireless Headphones",
+   "brand": "Sony"
+  },
+  {
+   "id": "w1",
+   "title": "Apple Watch Series 9 GPS 45mm",
+   "brand": "Apple"
+  },
+  {
+   "id": "l1",
+   "title": "Apple MacBook Air M3 13-inch 256GB",
+   "brand": "Apple"
+  },
+  {
+   "id": "l2",
+   "title": "Apple MacBook Air M2 13-inch 256GB",
+   "brand": "Apple"
+  },
+  {
+   "id": "c1",
+   "title": "Anker 737 Power Bank 24000mAh",
+   "brand": "Anker"
+  }
+ ]
+}

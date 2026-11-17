@@ -1,0 +1,306 @@
+{
+ "synthetic": true,
+ "generated_by": "tools/gen_eval_pairs.py",
+ "queries": [
+  {
+   "query": "iphone 15",
+   "relevant_ids": [
+    "p0"
+   ]
+  },
+  {
+   "query": "iphone 15 case",
+   "relevant_ids": [
+    "p0c"
+   ]
+  },
+  {
+   "query": "iphone 15 price in pakistan",
+   "relevant_ids": [
+    "p0"
+   ]
+  },
+  {
+   "query": "apple iphone 15 pta approved",
+   "relevant_ids": [
+    "p0"
+   ]
+  },
+  {
+   "query": "iphone 14",
+   "relevant_ids": [
+    "p1"
+   ]
+  },
+  {
+   "query": "iphone 14 case",
+   "relevant_ids": [
+    "p1c"
+   ]
+  },
+  {
+   "query": "iphone 14 price in pakistan",
+   "relevant_ids": [
+    "p1"
+   ]
+  },
+  {
+   "query": "apple iphone 14 pta approved",
+   "relevant_ids": [
+    "p1"
+   ]
+  },
+  {
+   "query": "galaxy s24",
+   "relevant_ids": [
+    "p2"
+   ]
+  },
+  {
+   "query": "galaxy s24 case",
+   "relevant_ids": [
+    "p2c"
+   ]
+  },
+  {
+   "query": "galaxy s24 price in pakistan",
+   "relevant_ids": [
+    "p2"
+   ]
+  },
+  {
+   "query": "samsung galaxy s24 pta approved",
+   "relevant_ids": [
+    "p2"
+   ]
+  },
+  {
+   "query": "galaxy s23",
+   "relevant_ids": [
+    "p3"
+   ]
+  },
+  {
+   "query": "galaxy s23 case",
+   "relevant_ids": [
+    "p3c"
+   ]
+  },
+  {
+   "query": "galaxy s23 price in pakistan",
+   "relevant_ids": [
+    "p3"
+   ]
+  },
+  {
+   "query": "samsung galaxy s23 pta approved",
+   "relevant_ids": [
+    "p3"
+   ]
+  },
+  {
+   "query": "galaxy a54",
+   "relevant_ids": [
+    "p4"
+   ]
+  },
+  {
+   "query": "galaxy a54 case",
+   "relevant_ids": [
+    "p4c"
+   ]
+  },
+  {
+   "query": "galaxy a54 price in pakistan",
+   "relevant_ids": [
+    "p4"
+   ]
+  },
+  {
+   "query": "samsung galaxy a54 pta approved",
+   "relevant_ids": [
+    "p4"
+   ]
+  },
+  {
+   "query": "pixel 8",
+   "relevant_ids": [
+    "p5"
+   ]
+  },
+  {
+   "query": "pixel 8 case",
+   "relevant_ids": [
+    "p5c"
+   ]
+  },
+  {
+   "query": "pixel 8 price in pakistan",
+   "relevant_ids": [
+    "p5"
+   ]
+  },
+  {
+   "query": "google pixel 8 pta approved",
+   "relevant_ids": [
+    "p5"
+   ]
+  },
+  {
+   "query": "redmi note 13",
+   "relevant_ids": [
+    "p6"
+   ]
+  },
+  {
+   "query": "redmi note 13 case",
+   "relevant_ids": [
+    "p6c"
+   ]
+  },
+  {
+   "query": "redmi note 13 price in pakistan",
+   "relevant_ids": [
+    "p6"
+   ]
+  },
+  {
+   "query": "xiaomi redmi note 13 pta approved",
+   "relevant_ids": [
+    "p6"
+   ]
+  },
+  {
+   "query": "hot 40",
+   "relevant_ids": [
+    "p7"
+   ]
+  },
+  {
+   "query": "hot 40 case",
+   "relevant_ids": [
+    "p7c"
+   ]
+  },
+  {
+   "query": "hot 40 price in pakistan",
+   "relevant_ids": [
+    "p7"
+   ]
+  },
+  {
+   "query": "infinix hot 40 pta approved",
+   "relevant_ids": [
+    "p7"
+   ]
+  },
+  {
+   "query": "spark 20",
+   "relevant_ids": [
+    "p8"
+   ]
+  },
+  {
+   "query": "spark 20 case",
+   "relevant_ids": [
+    "p8c"
+   ]
+  },
+  {
+   "query": "spark 20 price in pakistan",
+   "relevant_ids": [
+    "p8"
+   ]
+  },
+  {
+   "query": "tecno spark 20 pta approved",
+   "relevant_ids": [
+    "p8"
+   ]
+  },
+  {
+   "query": "12r",
+   "relevant_ids": [
+    "p9"
+   ]
+  },
+  {
+   "query": "12r case",
+   "relevant_ids": [
+    "p9c"
+   ]
+  },
+  {
+   "query": "12r price in pakistan",
+   "relevant_ids": [
+    "p9"
+   ]
+  },
+  {
+   "query": "oneplus 12r pta approved",
+   "relevant_ids": [
+    "p9"
+   ]
+  },
+  {
+   "query": "sony xm5 headphones",
+   "relevant_ids": [
+    "h1"
+   ]
+  },
+  {
+   "query": "sony wh-1000xm4",
+   "relevant_ids": [
+    "h2"
+   ]
+  },
+  {
+   "query": "apple watch series 9",
+   "relevant_ids": [
+    "w1"
+   ]
+  },
+  {
+   "query": "macbook air m3",
+   "relevant_ids": [
+    "l1"
+   ]
+  },
+  {
+   "query": "macbook air m2",
+   "relevant_ids": [
+    "l2"
+   ]
+  },
+  {
+   "query": "anker power bank",
+   "relevant_ids": [
+    "c1"
+   ]
+  },
+  {
+   "query": "iphone 15 ki qeemat",
+   "relevant_ids": [
+    "p0"
+   ]
+  },
+  {
+   "query": "samsung s24 sasta",
+   "relevant_ids": [
+    "p2"
+   ]
+  },
+  {
+   "query": "infinix hot 40 rate",
+   "relevant_ids": [
+    "p7"
+   ]
+  },
+  {
+   "query": "redmi note 13 cover",
+   "relevant_ids": [
+    "p6c"
+   ]
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 from __future__ import annotations
 import concurrent.futures, datetime, os, time
 from app.connectors.registry import REGISTRY
-from app.domain.matching import group_offers
+from app.domain.matching_v2 import group_offers_v2 as group_offers
 from app.domain.landed import landed_price, can_ship, certainty_for
 from app.domain.scoring import quality_score, value_score, median_price, top_reasons
 from app.domain.normalize import normalize_availability
@@ -57,13 +57,15 @@ def search(query: str, filters: dict|None=None, country: str="US", currency: str
     median=median_price(all_offers); groups=group_offers(all_offers); products=[]; unavailable=[]
     for g in groups:
         scored=[]
-        for o in g["offers"]:
+        for oi, o in enumerate(g["offers"]):
+            _m=g.get("offer_matches", [{}]*len(g["offers"]))[oi] if g.get("offer_matches") else {}
             if not can_ship(o, country): unavailable.append(o.to_dict()); continue
             landed=landed_price(o, country, currency, fx, category)
             q, expl=quality_score(o, median)
             oid=offer_id_for(o.connector, o.url); GO_STORE.register(oid, o, g["title"])
             scored.append({"offer":o.to_dict(),"landed":landed.to_dict() if landed else None,"quality_score":q,"quality_explanation":expl,"availability":normalize_availability(o.availability,o.stock_qty).value,"value_score":0.0,
                            "offer_id":oid,"go_url":f"/go/{oid}","trust_score":q,"trust_reasons":top_reasons(expl, o),
+                           "match_confidence":_m.get("score"),"match_reasons":_m.get("reasons",[]),
                            "certainty":certainty_for(o, landed),"checked_at":datetime.datetime.now(datetime.timezone.utc).isoformat()})
         if not scored: continue
         best=min([s["landed"]["total"] for s in scored if s["landed"]] or [0])
@@ -74,7 +76,7 @@ def search(query: str, filters: dict|None=None, country: str="US", currency: str
             scored[0]["badges"]=["Best value"]
             by_price=min(scored, key=lambda s: s["landed"]["total"] if s["landed"] else 1e18); by_price.setdefault("badges",[]).append("Best price")
             by_q=max(scored, key=lambda s: s["quality_score"]); by_q.setdefault("badges",[]).append("Best quality")
-        products.append({"id":g["id"],"title":g["title"],"brand":g["brand"],"gtin":g["gtin"],"accessory":g["accessory"],"offers":scored})
+        products.append({"id":g["id"],"title":g["title"],"brand":g["brand"],"gtin":g["gtin"],"accessory":g["accessory"],"variant":g.get("variant"),"offers":scored})
     sort=(filters.get("sort") or "best_value")
     keyf={"lowest_landed":lambda p: min([o["landed"]["total"] for o in p["offers"] if o["landed"]] or [1e18]),"best_quality":lambda p: -max(o["quality_score"] for o in p["offers"]),"lowest_item":lambda p: min([o["offer"]["price"] or 1e18 for o in p["offers"]])}
     if sort in keyf: products.sort(key=keyf[sort])

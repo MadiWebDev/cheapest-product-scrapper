@@ -1,0 +1,5434 @@
+{
+ "synthetic": true,
+ "generated_by": "tools/gen_eval_pairs.py",
+ "pairs": [
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "iPhone 15 128GB Black Unlocked Smartphone",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 - 128GB - Black - Official Warranty",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "iPhone 15 128GB Black Unlocked Smartphone",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 - 128GB - Black - Official Warranty",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "iPhone 15 128GB Black Unlocked Smartphone",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 - 128GB - Black - Official Warranty",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 256GB Blue",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 256GB Blue",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "iPhone 15 256GB Blue Unlocked Smartphone",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 256GB Blue",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 - 256GB - Blue - Official Warranty",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "iPhone 15 256GB Blue Unlocked Smartphone",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 - 256GB - Blue - Official Warranty",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "iPhone 15 256GB Blue Unlocked Smartphone",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 - 256GB - Blue - Official Warranty",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "iPhone 14 128GB Black Unlocked Smartphone",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 - 128GB - Black - Official Warranty",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "iPhone 14 128GB Black Unlocked Smartphone",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 - 128GB - Black - Official Warranty",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "iPhone 14 128GB Black Unlocked Smartphone",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 - 128GB - Black - Official Warranty",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 256GB Blue",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 256GB Blue",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "iPhone 14 256GB Blue Unlocked Smartphone",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 256GB Blue",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 - 256GB - Blue - Official Warranty",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "iPhone 14 256GB Blue Unlocked Smartphone",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 - 256GB - Blue - Official Warranty",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "iPhone 14 256GB Blue Unlocked Smartphone",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 - 256GB - Blue - Official Warranty",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Galaxy S24 128GB Black Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 - 128GB - Black - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Galaxy S24 128GB Black Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 - 128GB - Black - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Galaxy S24 128GB Black Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 - 128GB - Black - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 256GB Blue",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 256GB Blue",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Galaxy S24 256GB Blue Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 256GB Blue",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 - 256GB - Blue - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Galaxy S24 256GB Blue Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 - 256GB - Blue - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Galaxy S24 256GB Blue Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 - 256GB - Blue - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Galaxy S23 128GB Black Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 - 128GB - Black - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Galaxy S23 128GB Black Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 - 128GB - Black - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Galaxy S23 128GB Black Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 - 128GB - Black - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 256GB Blue",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 256GB Blue",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Galaxy S23 256GB Blue Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 256GB Blue",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 - 256GB - Blue - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Galaxy S23 256GB Blue Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 - 256GB - Blue - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Galaxy S23 256GB Blue Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 - 256GB - Blue - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Galaxy A54 128GB Black Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 - 128GB - Black - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Galaxy A54 128GB Black Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 - 128GB - Black - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Galaxy A54 128GB Black Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 - 128GB - Black - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 256GB Blue",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 256GB Blue",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Galaxy A54 256GB Blue Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 256GB Blue",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 - 256GB - Blue - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Galaxy A54 256GB Blue Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 - 256GB - Blue - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Galaxy A54 256GB Blue Unlocked Smartphone",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 - 256GB - Blue - Official Warranty",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Pixel 8 128GB Black Unlocked Smartphone",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 - 128GB - Black - Official Warranty",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Pixel 8 128GB Black Unlocked Smartphone",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 - 128GB - Black - Official Warranty",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Pixel 8 128GB Black Unlocked Smartphone",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 - 128GB - Black - Official Warranty",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 256GB Blue",
+    "brand": "Google",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Google",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 256GB Blue",
+    "brand": "Google",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Pixel 8 256GB Blue Unlocked Smartphone",
+    "brand": "Google",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 256GB Blue",
+    "brand": "Google",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 - 256GB - Blue - Official Warranty",
+    "brand": "Google",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Google",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Pixel 8 256GB Blue Unlocked Smartphone",
+    "brand": "Google",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Google",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 - 256GB - Blue - Official Warranty",
+    "brand": "Google",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Pixel 8 256GB Blue Unlocked Smartphone",
+    "brand": "Google",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 - 256GB - Blue - Official Warranty",
+    "brand": "Google",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Redmi Note 13 128GB Black Unlocked Smartphone",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 - 128GB - Black - Official Warranty",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Redmi Note 13 128GB Black Unlocked Smartphone",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 - 128GB - Black - Official Warranty",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Redmi Note 13 128GB Black Unlocked Smartphone",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 - 128GB - Black - Official Warranty",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 256GB Blue",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 256GB Blue",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Redmi Note 13 256GB Blue Unlocked Smartphone",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 256GB Blue",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 - 256GB - Blue - Official Warranty",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Redmi Note 13 256GB Blue Unlocked Smartphone",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 - 256GB - Blue - Official Warranty",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Redmi Note 13 256GB Blue Unlocked Smartphone",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 - 256GB - Blue - Official Warranty",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Hot 40 128GB Black Unlocked Smartphone",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 - 128GB - Black - Official Warranty",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Hot 40 128GB Black Unlocked Smartphone",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 - 128GB - Black - Official Warranty",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Hot 40 128GB Black Unlocked Smartphone",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 - 128GB - Black - Official Warranty",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 256GB Blue",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 256GB Blue",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Hot 40 256GB Blue Unlocked Smartphone",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 256GB Blue",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 - 256GB - Blue - Official Warranty",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Hot 40 256GB Blue Unlocked Smartphone",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 - 256GB - Blue - Official Warranty",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Hot 40 256GB Blue Unlocked Smartphone",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 - 256GB - Blue - Official Warranty",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Spark 20 128GB Black Unlocked Smartphone",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 - 128GB - Black - Official Warranty",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Spark 20 128GB Black Unlocked Smartphone",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 - 128GB - Black - Official Warranty",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Spark 20 128GB Black Unlocked Smartphone",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 - 128GB - Black - Official Warranty",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 256GB Blue",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 256GB Blue",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Spark 20 256GB Blue Unlocked Smartphone",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 256GB Blue",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 - 256GB - Blue - Official Warranty",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Spark 20 256GB Blue Unlocked Smartphone",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 - 256GB - Blue - Official Warranty",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Spark 20 256GB Blue Unlocked Smartphone",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 - 256GB - Blue - Official Warranty",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "12R 128GB Black Unlocked Smartphone",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R - 128GB - Black - Official Warranty",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "12R 128GB Black Unlocked Smartphone",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R (128GB) - Black - Dual SIM - PTA Approved",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R - 128GB - Black - Official Warranty",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "12R 128GB Black Unlocked Smartphone",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R - 128GB - Black - Official Warranty",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R 256GB Blue",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R 256GB Blue",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "12R 256GB Blue Unlocked Smartphone",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R 256GB Blue",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R - 256GB - Blue - Official Warranty",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "12R 256GB Blue Unlocked Smartphone",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R (256GB) - Blue - Dual SIM - PTA Approved",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R - 256GB - Blue - Official Warranty",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "12R 256GB Blue Unlocked Smartphone",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R - 256GB - Blue - Official Warranty",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "match",
+   "kind": "positive:phrasing"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 256GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:storage"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 128GB Blue",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:colour"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 Case - Leather Cover",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:accessory"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 128GB Black - Used",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "used"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:condition"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 128GB Black Bundle with Charger and Case",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:bundle"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black Dual SIM",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "dual"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 128GB Black Single SIM",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "single"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:sim"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black Unlocked",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "unlocked"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 128GB Black Carrier Locked",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "locked"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:carrier"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black 8GB RAM",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "8GB"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 15 128GB Black 12GB RAM",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "12GB"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:ram"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 256GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:storage"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 128GB Blue",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:colour"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 Case - Leather Cover",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:accessory"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 128GB Black - Used",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "used"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:condition"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 128GB Black Bundle with Charger and Case",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:bundle"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black Dual SIM",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "dual"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 128GB Black Single SIM",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "single"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:sim"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black Unlocked",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "unlocked"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 128GB Black Carrier Locked",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "locked"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:carrier"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black 8GB RAM",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "8GB"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 128GB Black 12GB RAM",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "12GB"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:ram"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 256GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:storage"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 128GB Blue",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:colour"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 Case - Leather Cover",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:accessory"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 128GB Black - Used",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "used"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:condition"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 128GB Black Bundle with Charger and Case",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:bundle"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black Dual SIM",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "dual"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 128GB Black Single SIM",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "single"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:sim"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black Unlocked",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "unlocked"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 128GB Black Carrier Locked",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "locked"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:carrier"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black 8GB RAM",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "8GB"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 128GB Black 12GB RAM",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "12GB"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:ram"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 256GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:storage"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 128GB Blue",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:colour"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 Case - Leather Cover",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:accessory"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 128GB Black - Used",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "used"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:condition"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 128GB Black Bundle with Charger and Case",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:bundle"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black Dual SIM",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "dual"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 128GB Black Single SIM",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "single"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:sim"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black Unlocked",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "unlocked"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 128GB Black Carrier Locked",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "locked"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:carrier"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black 8GB RAM",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "8GB"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 128GB Black 12GB RAM",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "12GB"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:ram"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 256GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:storage"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 128GB Blue",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:colour"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 Case - Leather Cover",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:accessory"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 128GB Black - Used",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "used"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:condition"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 128GB Black Bundle with Charger and Case",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:bundle"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black Dual SIM",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "dual"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 128GB Black Single SIM",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "single"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:sim"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black Unlocked",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "unlocked"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 128GB Black Carrier Locked",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "locked"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:carrier"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black 8GB RAM",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "8GB"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 128GB Black 12GB RAM",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "12GB"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:ram"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 256GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:storage"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 128GB Blue",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:colour"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 Case - Leather Cover",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:accessory"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 128GB Black - Used",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "used"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:condition"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 128GB Black Bundle with Charger and Case",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:bundle"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black Dual SIM",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "dual"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 128GB Black Single SIM",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "single"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:sim"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black Unlocked",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "unlocked"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 128GB Black Carrier Locked",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "locked"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:carrier"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black 8GB RAM",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "8GB"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 128GB Black 12GB RAM",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "12GB"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:ram"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 256GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:storage"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 128GB Blue",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:colour"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 Case - Leather Cover",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:accessory"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 128GB Black - Used",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "used"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:condition"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 128GB Black Bundle with Charger and Case",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:bundle"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 128GB Black Dual SIM",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "dual"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 128GB Black Single SIM",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "single"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:sim"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 128GB Black Unlocked",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "unlocked"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 128GB Black Carrier Locked",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "locked"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:carrier"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 128GB Black 8GB RAM",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "8GB"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 128GB Black 12GB RAM",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "12GB"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:ram"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 256GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:storage"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 128GB Blue",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:colour"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 Case - Leather Cover",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:accessory"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 128GB Black - Used",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "used"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:condition"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 128GB Black Bundle with Charger and Case",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:bundle"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 128GB Black Dual SIM",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "dual"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 128GB Black Single SIM",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "single"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:sim"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 128GB Black Unlocked",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "unlocked"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 128GB Black Carrier Locked",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "locked"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:carrier"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 128GB Black 8GB RAM",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "8GB"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 128GB Black 12GB RAM",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "12GB"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:ram"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 256GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:storage"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 128GB Blue",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:colour"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 Case - Leather Cover",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:accessory"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 128GB Black - Used",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "used"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:condition"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 128GB Black Bundle with Charger and Case",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:bundle"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 128GB Black Dual SIM",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "dual"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 128GB Black Single SIM",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "single"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:sim"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 128GB Black Unlocked",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "unlocked"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 128GB Black Carrier Locked",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "locked"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:carrier"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 128GB Black 8GB RAM",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "8GB"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 128GB Black 12GB RAM",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "12GB"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:ram"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 256GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "256GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:storage"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Blue",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Blue"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:colour"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R Case - Leather Cover",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:accessory"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Black - Used",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "used"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:condition"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Black Bundle with Charger and Case",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:bundle"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R 128GB Black Dual SIM",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "dual"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Black Single SIM",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "sim": "single"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:sim"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R 128GB Black Unlocked",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "unlocked"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Black Carrier Locked",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "carrier": "locked"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:carrier"
+  },
+  {
+   "a": {
+    "title": "OnePlus 12R 128GB Black 8GB RAM",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "8GB"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Black 12GB RAM",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black",
+     "ram": "12GB"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:ram"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:generation"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:generation"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "hard_negative:generation"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 15 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Apple iPhone 14 128GB Black",
+    "brand": "Apple",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S24 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy S23 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Samsung Galaxy A54 128GB Black",
+    "brand": "Samsung",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Google Pixel 8 128GB Black",
+    "brand": "Google",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Xiaomi Redmi Note 13 128GB Black",
+    "brand": "Xiaomi",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Infinix Hot 40 128GB Black",
+    "brand": "Infinix",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  },
+  {
+   "a": {
+    "title": "Tecno Spark 20 128GB Black",
+    "brand": "Tecno",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "b": {
+    "title": "OnePlus 12R 128GB Black",
+    "brand": "OnePlus",
+    "attributes": {
+     "storage": "128GB",
+     "color": "Black"
+    },
+    "condition": "new"
+   },
+   "label": "no_match",
+   "kind": "negative:brand"
+  }
+ ]
+}
