@@ -1,8 +1,18 @@
 from __future__ import annotations
-from fastapi import APIRouter, HTTPException
+import os
+from fastapi import APIRouter, Depends, HTTPException, Request
 from app.connectors.registry import REGISTRY
 from app.domain.landed import VAT, DUTY
-router=APIRouter(prefix="/api/admin", tags=["admin"])
+
+def _legacy_admin_guard(request: Request):
+    """Phase 14 (L-069): when ADMIN_API_KEY is configured, the legacy
+    admin routes require it. When it is not configured they stay open
+    for local development — deployments must set the key (DEPLOYMENT.md)."""
+    key = os.getenv("ADMIN_API_KEY")
+    if key and request.headers.get("x-admin-key") != key:
+        raise HTTPException(403, "admin key required")
+
+router=APIRouter(prefix="/api/admin", tags=["admin"], dependencies=[Depends(_legacy_admin_guard)])
 _state={n:{"enabled":True,"successes":0,"failures":0,"blocks":0} for n in REGISTRY}
 @router.get("/connectors")
 def health():

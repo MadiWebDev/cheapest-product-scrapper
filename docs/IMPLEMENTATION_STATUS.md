@@ -1,33 +1,25 @@
-# IMPLEMENTATION STATUS — PRICEINTEL v3 (generated from TRUTH_LEDGER.md)
+# Implementation Status (final, 2026-11-17)
 
-Snapshot: 2026-11-17, end of Phase 0.
-
-## Counts by status (ledger rows L-001…L-016)
-
-- VERIFIED: 10 (L-001…L-008, L-010, L-011)
-- IMPLEMENTED-UNVERIFIED: 2 (L-009 FX live fetch, L-016 v1 history/alerts/admin)
-- BLOCKED: 4 (L-012 Docker, L-013 CI push, L-014 live marketplaces, L-015 Playwright)
-- STUBBED: 0 · PLANNED: all v3 phase features not yet started (Phases 1–14)
-
-## Phase status
+Generated from docs/TRUTH_LEDGER.md (87 rows): **73 VERIFIED,
+7 IMPLEMENTED-UNVERIFIED, 7 BLOCKED, 0 STUBBED, 0 PLANNED.**
 
 | Phase | Scope | Status |
 |---|---|---|
-| 0 | Audit, baselines, AOS docs, verify scripts, ADRs | VERIFIED (this snapshot) |
-| 1 | Walking skeleton: compliance gate, /go, journey test | PLANNED |
-| 2 | Location intelligence + country config + PKR formatting | PLANNED |
-| 3 | Adapter manifests, contract tests, drift → health | PLANNED |
-| 4 | Matching v2 + eval datasets | PLANNED |
-| 5 | Landed v2, fair band, PCI, glitch quarantine | PLANNED |
-| 6 | Trust v2, ranking independence, fairness audit | PLANNED |
-| 7 | AI assistant fallback, scam checker, MCP | PLANNED |
-| 8 | Web app completion, i18n scaffold, Lite mode | PLANNED |
-| 9 | Affiliate service, Paddle billing abstraction, sponsored separation | PLANNED |
-| 10 | Alerts completion, Telegram webhook (flagged) | PLANNED |
-| 11 | Admin completion, developer API, seller basics | PLANNED |
-| 12 | Mobile + extension scaffolds | PLANNED |
-| 13 | §16.2 feature set (flag-gated) | PLANNED |
-| 14 | Hardening, docs, FINAL_REPORT, zip | PLANNED |
+| 0 | Audit, baselines, Agent OS docs, scripts, ADRs D-025…D-032 | VERIFIED (CI push BLOCKED B3-002) |
+| 1 | Walking skeleton: compliance gate, certainty, trust reasons, /go | VERIFIED |
+| 2 | Location intelligence, country config, lakh/crore, compliance admin | VERIFIED |
+| 3 | Adapter manifests, contract tests, drift→health | VERIFIED |
+| 4 | Matching v2 + evals (FM 0.0000, hit@5 1.000) | VERIFIED |
+| 5 | Landed golden cases, FX hourly failover, band/PCI/quarantine | VERIFIED |
+| 6 | Trust v2, ranking explanations, fairness audit, isolation proofs | VERIFIED |
+| 7 | Grounded AI assistant, scam checker, MCP | VERIFIED; LLM path BLOCKED (B3-004) |
+| 8 | Web evidence UI, methodology, i18n/RTL, Lite, a11y | VERIFIED; a11y tooling pass IMPLEMENTED-UNVERIFIED |
+| 9 | Affiliate service, Paddle billing, sponsored separation | VERIFIED; live checkout IMPLEMENTED-UNVERIFIED (B3-005) |
+| 10 | Alerts v2, watchlists, Telegram webhook, WhatsApp design | VERIFIED; live delivery BLOCKED (B3-005) |
+| 11 | RBAC admin, match review, seller intel, developer API | VERIFIED |
+| 12 | Mobile + extension scaffolds | IMPLEMENTED-UNVERIFIED (no runtime in VM) |
+| 13 | §16.2 features ×8, flag-gated | VERIFIED |
+| 14 | Hardening: coverage 94%, security pass, chaos, load smoke, docs | VERIFIED; Docker boot BLOCKED (B3-001) |
 
-This file is updated at every phase close from the ledger; it never
-claims more than the ledger evidences.
+Backend suite: 101 tests passing. Frontend build green
+(First Load JS shared 87.3 kB). See docs/FINAL_REPORT.md.

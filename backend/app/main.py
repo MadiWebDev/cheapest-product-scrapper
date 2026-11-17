@@ -48,6 +48,17 @@ app.add_middleware(
     allowed_hosts=["*"]  # In production, specify actual hosts
 )
 
+# Security headers (Phase 14 hardening). The API serves JSON; the
+# frontend is a separate Next.js app with its own headers.
+@app.middleware("http")
+async def security_headers(request, call_next):
+    response = await call_next(request)
+    response.headers.setdefault("X-Content-Type-Options", "nosniff")
+    response.headers.setdefault("X-Frame-Options", "DENY")
+    response.headers.setdefault("Referrer-Policy", "no-referrer")
+    response.headers.setdefault("Content-Security-Policy", "default-src 'none'; frame-ancestors 'none'")
+    return response
+
 # Include routers
 app.include_router(auth.router)
 app.include_router(upload.router)

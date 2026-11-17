@@ -1,21 +1,20 @@
 # STATE — PRICEINTEL v3 resume file (directive §1.4)
 
-**Current phase:** 13 — §16.2 features (complete); Phase 14 next. PUSHES PAUSED (B3-007).
-**Last completed task:** Phase 13 — all eight §16.2 features built
-and flag-gated (safety kit, compatibility, budget planner, outcomes,
-evidence pack, alternatives, Deal Passport, smart digest).
-Suite: 96 passed.
+**Current phase:** 14 — Hardening + docs (complete). PROGRAM COMPLETE locally; pushes for phases 4-14 pending B3-007 reconciliation.
+**Last completed task:** Phase 14 — security headers, legacy admin
+auth (L-069 closed), chaos tests, coverage 94% on critical modules,
+load smoke (p50 30.2 ms), twelve docs + FINAL_REPORT.md.
+FINAL: 101 tests passing; ledger 87 rows = 73 VERIFIED /
+7 IMPLEMENTED-UNVERIFIED / 7 BLOCKED.
 Pushes confirmed: p0 3ef8628d, p1 6538b242, p2 1f71a35e, p3 2000846d.
 Phase 4 push UNVERIFIED (B3-007) — reconcile via list_commits before
 any re-push; phases 4-5 commits are local until then.
 **Next three tasks:**
-1. Phase 14: coverage on pricing/matching/trust/ranking
-   modules (measure real number vs 80% target); security pass
-   (incl. legacy admin auth L-069); load smoke; chaos tests.
-2. Phase 14: docs completion (COMPLIANCE/SECURITY/DATABASE/API/
-   DEPLOYMENT/TESTING/EVALUATION/MONETIZATION/PERFORMANCE/
-   RUNBOOKS/METHODOLOGY/TRANSPARENCY) + FINAL_REPORT.md.
-3. Phase 14 commit + final zip (push pending B3-007).
+1. When the user is present: reconcile pushes (list_commits;
+   B3-007 runbook) then push phases 4-14 one by one.
+2. Owner actions for live legs: marketplace/API keys, Paddle keys,
+   SMTP/Telegram tokens, Docker host check, CI Workflows permission.
+3. Nothing else outstanding in the v3 scope.
 
 **Open blockers:** B3-001 Docker absent in VM; B3-002 `.github/workflows/*`
 push 403; B3-003 no live marketplace keys; B3-004 no LLM key; B3-005 no
