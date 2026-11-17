@@ -80,6 +80,33 @@ def eval_relevance() -> tuple[bool, str]:
                 f"| precision@5 {p5 / n:.3f} (capped 0.2 by construction) | MRR {rr / n:.3f}")
 
 
+def eval_scam() -> tuple[bool, str]:
+    sys.path.insert(0, str(ROOT / "backend"))
+    from app.priceintel.scam import analyze_ad
+    data = json.loads((ROOT / "eval" / "scam_ads.json").read_text())
+    ads = data["ads"]
+    caught = missed = clean = flagged = 0
+    for ad in ads:
+        r = analyze_ad(ad["text"])
+        if ad["label"] == "scam_indicators":
+            if r["risk_level"] in ("high", "medium"):
+                caught += 1
+            else:
+                missed += 1
+        else:
+            if r["risk_level"] in ("none_found", "low"):
+                clean += 1
+            else:
+                flagged += 1
+    n_scam = caught + missed
+    n_legit = clean + flagged
+    recall = caught / n_scam if n_scam else 0.0
+    fpr = flagged / n_legit if n_legit else 0.0
+    ok = recall >= 0.85 and fpr <= 0.25
+    return ok, (f"scam-ads: {len(ads)} synthetic ads | indicator recall {caught}/{n_scam} = {recall:.3f} "
+                f"(gate >= 0.85) | legit false-flag {flagged}/{n_legit} = {fpr:.3f} (gate <= 0.25)")
+
+
 def main() -> int:
     failures = []
     for name, phase in EXPECTED.items():
@@ -87,6 +114,11 @@ def main() -> int:
             print(f"eval: {name} PLANNED ({phase})")
     if (ROOT / "eval" / "matching_pairs.json").exists():
         ok, msg = eval_matching()
+        print("eval:", msg)
+        if not ok:
+            failures.append(msg)
+    if (ROOT / "eval" / "scam_ads.json").exists():
+        ok, msg = eval_scam()
         print("eval:", msg)
         if not ok:
             failures.append(msg)

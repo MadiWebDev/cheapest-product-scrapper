@@ -81,6 +81,18 @@ def adapters():
                          for m in MANIFESTS.values()]}
 
 
+@router.post("/api/assistant")
+def assistant(body: dict):
+    from app.priceintel.ai import answer
+    return answer(body.get("query", ""), body.get("country", "PK"), body.get("currency", "PKR"))
+
+
+@router.post("/api/scam-check")
+def scam_check(body: dict):
+    from app.priceintel.scam import analyze_ad
+    return analyze_ad(body.get("text", ""), body.get("market_median"))
+
+
 @router.get("/api/adapters/{adapter_id}")
 def adapter_one(adapter_id: str):
     from app.priceintel.health import HEALTH

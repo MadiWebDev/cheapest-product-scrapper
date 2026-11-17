@@ -1,0 +1,70 @@
+{
+ "synthetic": true,
+ "note": "Synthetic labeled ads written for this eval; not real listings.",
+ "ads": [
+  {
+   "text": "iPhone 15 Pro Max only Rs 95,000!! Advance payment via JazzCash, hurry only today last piece, WhatsApp only",
+   "label": "scam_indicators"
+  },
+  {
+   "text": "Samsung S24 Ultra Rs 120,000 - pay first via Easypaisa, no COD, offer ending soon",
+   "label": "scam_indicators"
+  },
+  {
+   "text": "Brand new Pixel 8 - 100% advance, bank transfer only, jaldi karo deal khatam ho rahi hai",
+   "label": "scam_indicators"
+  },
+  {
+   "text": "MacBook Air M3 half price - send advance to Easypaisa number, WhatsApp only, no comments",
+   "label": "scam_indicators"
+  },
+  {
+   "text": "iPhone 14 Rs 60,000 fresh piece guaranteed original - advance bhejo JazzCash par, only today",
+   "label": "scam_indicators"
+  },
+  {
+   "text": "Redmi Note 13 - pay first, crypto accepted, COD not available, limited time offer",
+   "label": "scam_indicators"
+  },
+  {
+   "text": "Sony headphones Rs 5,000 (market 45,000) - advance payment required, DM only",
+   "label": "scam_indicators"
+  },
+  {
+   "text": "Apple Watch Ultra cheap - hurry, last piece, advance via bank transfer only",
+   "label": "scam_indicators"
+  },
+  {
+   "text": "iPhone 15 128GB PTA approved, Rs 385,000, cash on delivery available in Karachi, shop in Saddar with bill and warranty card",
+   "label": "legit"
+  },
+  {
+   "text": "Samsung Galaxy A54 - Rs 112,000, sealed pack, official warranty, COD nationwide, store pickup available",
+   "label": "legit"
+  },
+  {
+   "text": "Used Infinix Hot 40, 8/256, Rs 32,000, condition 9/10, meet at Lahore railway station, check before you pay",
+   "label": "legit"
+  },
+  {
+   "text": "Sony WH-1000XM5 headphones Rs 98,500 with 1-year warranty, card and cash accepted, returns within 14 days",
+   "label": "legit"
+  },
+  {
+   "text": "MacBook Air M2 for sale Rs 265,000, box and charger included, can video call to show, COD in Islamabad",
+   "label": "legit"
+  },
+  {
+   "text": "Tecno Spark 20 Rs 28,500 - PTA approved, dual SIM, available at our Multan shop, delivery with inspection allowed",
+   "label": "legit"
+  },
+  {
+   "text": "Anker power bank 737 Rs 21,000 original with serial number verifiable on Anker website, exchange possible within 7 days",
+   "label": "legit"
+  },
+  {
+   "text": "Google Pixel 8 128GB Rs 210,000, non-PTA, Wi-Fi use only clearly stated, shop receipt provided, returns accepted",
+   "label": "legit"
+  }
+ ]
+}
