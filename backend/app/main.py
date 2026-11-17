@@ -64,6 +64,9 @@ app.include_router(priceintel_router.router)
 from app.routers import mcp as mcp_router
 app.include_router(mcp_router.router)
 
+from app.routers import admin_v2 as admin_v2_router
+app.include_router(admin_v2_router.router)
+
 
 @app.get("/", response_model=SuccessResponse)
 @limiter.limit("100/minute")

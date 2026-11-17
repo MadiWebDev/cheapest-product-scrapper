@@ -63,6 +63,8 @@ def search(query: str, filters: dict|None=None, country: str="US", currency: str
             landed=landed_price(o, country, currency, fx, category)
             q, expl=quality_score(o, median)
             from app.priceintel.trust import trust_v2
+            from app.priceintel.admin_v2 import SELLERS
+            SELLERS.record("public", o)
             _trust=trust_v2(o, median)
             oid=offer_id_for(o.connector, o.url); GO_STORE.register(oid, o, g["title"])
             scored.append({"offer":o.to_dict(),"landed":landed.to_dict() if landed else None,"quality_score":q,"quality_explanation":expl,"availability":normalize_availability(o.availability,o.stock_qty).value,"value_score":0.0,

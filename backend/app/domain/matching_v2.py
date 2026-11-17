@@ -124,6 +124,12 @@ def match_confidence(a: RawOffer, b: RawOffer) -> dict:
     """Explainable pairwise confidence: {score 0-100, reasons, hard_block}."""
     if a is b:
         return {"score": 100, "reasons": ["same offer"], "hard_block": None}
+    ov = get_override(a.title, b.title)
+    if ov == "match":
+        return {"score": 100, "reasons": ["human review override: confirmed match"], "hard_block": None}
+    if ov == "no_match":
+        return {"score": 0, "reasons": ["human review override: confirmed non-match"],
+                "hard_block": "human review override"}
     block = hard_block(a, b)
     ea, eb = exact_key(a), exact_key(b)
     if ea and eb and ea == eb:
@@ -171,6 +177,25 @@ def match_confidence(a: RawOffer, b: RawOffer) -> dict:
 # 2026-11-17): threshold 60 -> false-merge 0.00%, false-split 1.67%.
 # The directive's false-merge gate is <1%; 60 keeps margin on both sides.
 MERGE_THRESHOLD = 60
+
+
+# --- human review overrides (Phase 11 match-review queue) --------------------
+# A reviewed decision beats the algorithm for that exact title pair.
+_OVERRIDES: dict[frozenset, str] = {}
+
+
+def _pair_key(title_a: str, title_b: str) -> frozenset:
+    return frozenset((normalize_title(title_a), normalize_title(title_b)))
+
+
+def set_override(title_a: str, title_b: str, decision: str) -> None:
+    if decision not in ("match", "no_match"):
+        raise ValueError("decision must be match | no_match")
+    _OVERRIDES[_pair_key(title_a, title_b)] = decision
+
+
+def get_override(title_a: str, title_b: str) -> str | None:
+    return _OVERRIDES.get(_pair_key(title_a, title_b))
 
 
 def group_offers_v2(offers: list[RawOffer]) -> list[dict]:
