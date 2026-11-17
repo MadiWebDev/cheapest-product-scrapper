@@ -62,9 +62,11 @@ def search(query: str, filters: dict|None=None, country: str="US", currency: str
             if not can_ship(o, country): unavailable.append(o.to_dict()); continue
             landed=landed_price(o, country, currency, fx, category)
             q, expl=quality_score(o, median)
+            from app.priceintel.trust import trust_v2
+            _trust=trust_v2(o, median)
             oid=offer_id_for(o.connector, o.url); GO_STORE.register(oid, o, g["title"])
             scored.append({"offer":o.to_dict(),"landed":landed.to_dict() if landed else None,"quality_score":q,"quality_explanation":expl,"availability":normalize_availability(o.availability,o.stock_qty).value,"value_score":0.0,
-                           "offer_id":oid,"go_url":f"/go/{oid}","trust_score":q,"trust_reasons":top_reasons(expl, o),
+                           "offer_id":oid,"go_url":f"/go/{oid}","trust_score":_trust["score"],"trust_reasons":_trust["reasons"],"trust":_trust,
                            "match_confidence":_m.get("score"),"match_reasons":_m.get("reasons",[]),
                            "certainty":certainty_for(o, landed),"checked_at":datetime.datetime.now(datetime.timezone.utc).isoformat()})
         if not scored: continue
@@ -85,6 +87,10 @@ def search(query: str, filters: dict|None=None, country: str="US", currency: str
             else: s["quarantined"]=False; s["fair_position"]=None; s["pci"]=None
         scored.sort(key=lambda s: s["value_score"], reverse=True)
         scored.sort(key=lambda s: 1 if s.get("quarantined") else 0)  # quarantined last, stable
+        for _i, s in enumerate(scored):
+            s["ranking"]={"position":_i+1,"value_score":s["value_score"],
+                          "basis":"value score from landed total, trust score and delivery speed only; no commission, campaign or sponsored data is an input",
+                          "quarantined":bool(s.get("quarantined"))}
         if scored:
             scored[0]["badges"]=["Best value"]
             cands=[s for s in scored if not s.get("quarantined")] or scored
